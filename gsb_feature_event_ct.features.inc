@@ -19,6 +19,13 @@ function gsb_feature_event_ct_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function gsb_feature_event_ct_views_api() {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function gsb_feature_event_ct_node_info() {

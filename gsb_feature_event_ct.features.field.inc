@@ -441,7 +441,7 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Body',
+      'label' => 'Description',
       'required' => FALSE,
       'settings' => array(
         'display_summary' => TRUE,
@@ -1790,7 +1790,7 @@ function gsb_feature_event_ct_field_default_fields() {
   t('About Speaker');
   t('Address');
   t('All Day Event');
-  t('Body');
+  t('Description');
   t('Editorial Blurb');
   t('Event Date');
   t('Event Image');

@@ -324,8 +324,8 @@ function gsb_feature_event_ct_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'UseEntityReference' => 'Faculty or Staff',
-          'Custom' => 'Custom',
+          'UseEntityReference' => 'Fac/Staff',
+          'Other' => 'Other',
         ),
         'allowed_values_function' => '',
       ),

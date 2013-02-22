@@ -41,7 +41,7 @@ function gsb_feature_event_ct_form_gsb_event_node_form_alter(&$form, &$form_stat
         $form['field_speakers']['und'][$index]['field_speaker_first_name']['#states'] = array(
           'visible' => array(
             ':input[name="field_speakers[und][' . $index . '][field_speaker_reference][und]"]' => array(
-              array('value' => 'Custom'),
+              array('value' => 'Other'),
             ),
           ),
         );
@@ -49,7 +49,7 @@ function gsb_feature_event_ct_form_gsb_event_node_form_alter(&$form, &$form_stat
         $form['field_speakers']['und'][$index]['field_speaker_last_name']['#states'] = array(
           'visible' => array(
             ':input[name="field_speakers[und][' . $index . '][field_speaker_reference][und]"]' => array(
-              array('value' => 'Custom'),
+              array('value' => 'Other'),
             ),
           ),
         );

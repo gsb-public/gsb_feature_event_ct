@@ -4,6 +4,7 @@ package = GSB
 php = 5.2.4
 version = 7.x-1.0
 project = gsb_feature_event_ct
+dependencies[] = addressfield
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_ical

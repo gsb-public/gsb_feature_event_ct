@@ -22,15 +22,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->data = array(
     'label' => 'Location',
     'weight' => '8',
-    'children' => array(
-      0 => 'field_city',
-      1 => 'field_country',
-      2 => 'field_postal_code',
-      3 => 'field_state',
-      4 => 'field_street_address_1',
-      5 => 'field_street_address_2',
-      6 => 'field_street_address_3',
-    ),
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',

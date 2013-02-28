@@ -2166,7 +2166,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'panopoly_categories',
+            'vocabulary' => 'target_audience',
             'parent' => '0',
           ),
         ),
@@ -2214,12 +2214,9 @@ function gsb_feature_event_ct_field_default_fields() {
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 0,
+        'active' => 1,
         'module' => 'options',
-        'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
-        ),
+        'settings' => array(),
         'type' => 'options_select',
         'weight' => '22',
       ),

@@ -2144,7 +2144,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_target_audience'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_target_audience',
@@ -2214,10 +2214,13 @@ function gsb_feature_event_ct_field_default_fields() {
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'active' => 0,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
         'weight' => '22',
       ),
       'workbench_access_field' => 0,

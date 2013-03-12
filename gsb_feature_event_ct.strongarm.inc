@@ -40,6 +40,9 @@ function gsb_feature_event_ct_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'tiny' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -47,10 +50,13 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '28',
+          'weight' => '14',
         ),
         'workbench_access' => array(
-          'weight' => '29',
+          'weight' => '15',
+        ),
+        'flag' => array(
+          'weight' => '8',
         ),
       ),
       'display' => array(),

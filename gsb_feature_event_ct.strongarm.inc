@@ -50,10 +50,10 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'workbench_access' => array(
-          'weight' => '15',
+          'weight' => '16',
         ),
         'flag' => array(
           'weight' => '8',

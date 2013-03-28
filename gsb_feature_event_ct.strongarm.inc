@@ -47,16 +47,19 @@ function gsb_feature_event_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '15',
+          'weight' => '8',
         ),
         'workbench_access' => array(
-          'weight' => '16',
+          'weight' => '0',
         ),
         'flag' => array(
-          'weight' => '8',
+          'weight' => '7',
+        ),
+        'metatags' => array(
+          'weight' => '9',
         ),
       ),
       'display' => array(),

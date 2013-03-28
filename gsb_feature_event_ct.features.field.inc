@@ -254,14 +254,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_person_ref',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -434,96 +427,7 @@ function gsb_feature_event_ct_field_default_fields() {
           ),
         ),
         'type' => 'addressfield_standard',
-        'weight' => '5',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
-  // Exported field: 'node-gsb_event-field_all_day_event'.
-  $fields['node-gsb_event-field_all_day_event'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_all_day_event',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => '',
-          1 => '',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_boolean',
-    ),
-    'field_instance' => array(
-      'bundle' => 'gsb_event',
-      'default_value' => array(
-        0 => array(
-          'value' => 0,
-        ),
-      ),
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '3',
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '5',
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_all_day_event',
-      'label' => 'All Day Event',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(
-          'display_label' => 1,
-        ),
-        'type' => 'options_onoff',
-        'weight' => '4',
+        'weight' => '7',
       ),
       'workbench_access_field' => 0,
     ),
@@ -603,7 +507,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'enable' => 0,
           'insert_plugin' => '',
         ),
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -617,7 +521,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '1',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
@@ -627,7 +531,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_business_insight_topic'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_business_insight_topic',
@@ -705,9 +609,9 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'options_select',
+        'type' => 'taxonomy_hs',
         'weight' => '22',
       ),
       'workbench_access_field' => 0,
@@ -802,7 +706,99 @@ function gsb_feature_event_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '27',
+        'weight' => '30',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'node-gsb_event-field_department'.
+  $fields['node-gsb_event-field_department'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_department',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'department',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'gsb_event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 40,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_department',
+      'label' => 'Department',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'options_select',
+        'weight' => '25',
       ),
       'workbench_access_field' => 0,
     ),
@@ -812,7 +808,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_discipline'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_discipline',
@@ -890,10 +886,10 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '24',
+        'type' => 'taxonomy_hs',
+        'weight' => '26',
       ),
       'workbench_access_field' => 0,
     ),
@@ -968,7 +964,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_editorial_summary',
       'label' => 'Editorial Summary',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'linkit' => array(
           'enable' => 0,
@@ -981,10 +977,14 @@ function gsb_feature_event_ct_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '4',
+          'maxlength_js' => '150',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '3',
         ),
         'type' => 'text_textarea',
-        'weight' => '2',
+        'weight' => '3',
       ),
       'workbench_access_field' => 0,
     ),
@@ -994,7 +994,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_event_category'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_event_category',
@@ -1071,10 +1071,10 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '20',
+        'type' => 'taxonomy_hs',
+        'weight' => '23',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1084,7 +1084,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_event_date'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_event_date',
@@ -1103,6 +1103,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
+        'repeat' => '1',
         'timezone_db' => 'UTC',
         'todate' => 'optional',
         'tz_handling' => 'site',
@@ -1124,6 +1125,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'multiple_from' => '',
             'multiple_number' => '',
             'multiple_to' => '',
+            'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
           'weight' => '14',
@@ -1143,6 +1145,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'multiple_from' => '',
             'multiple_number' => '',
             'multiple_to' => '',
+            'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
           'weight' => '1',
@@ -1156,6 +1159,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'multiple_from' => '',
             'multiple_number' => '',
             'multiple_to' => '',
+            'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
           'weight' => '6',
@@ -1170,7 +1174,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_event_date',
       'label' => 'Event Date',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'default_value' => 'now',
         'default_value2' => 'same',
@@ -1182,16 +1186,20 @@ function gsb_feature_event_ct_field_default_fields() {
         'active' => 1,
         'module' => 'date',
         'settings' => array(
+          'display_all_day' => 1,
           'increment' => '15',
           'input_format' => 'Y-m-d H:i:s',
           'input_format_custom' => '',
           'label_position' => 'above',
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'repeat_collapsed' => 1,
           'text_parts' => array(),
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '3',
+        'weight' => '2',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -1199,7 +1207,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_event_series'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_event_series',
@@ -1276,10 +1284,10 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '23',
+        'type' => 'taxonomy_hs',
+        'weight' => '24',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1402,7 +1410,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '10',
+        'weight' => '11',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1496,7 +1504,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '11',
+        'weight' => '12',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1506,7 +1514,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_industry'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_industry',
@@ -1584,10 +1592,10 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '25',
+        'type' => 'taxonomy_hs',
+        'weight' => '27',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1693,7 +1701,7 @@ function gsb_feature_event_ct_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '7',
+        'weight' => '8',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1774,7 +1782,7 @@ function gsb_feature_event_ct_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '9',
+        'weight' => '10',
       ),
     ),
   );
@@ -1783,7 +1791,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_region'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_region',
@@ -1861,10 +1869,10 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '26',
+        'type' => 'taxonomy_hs',
+        'weight' => '29',
       ),
       'workbench_access_field' => 0,
     ),
@@ -2064,7 +2072,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '28',
+        'weight' => '31',
       ),
       'workbench_access_field' => 0,
     ),
@@ -2074,7 +2082,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-gsb_event-field_target_audience'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_target_audience',
@@ -2151,13 +2159,13 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'taxonomy',
+        'module' => 'hs_taxonomy',
         'settings' => array(
           'autocomplete_path' => 'taxonomy/autocomplete',
           'size' => 60,
         ),
-        'type' => 'taxonomy_autocomplete',
-        'weight' => '21',
+        'type' => 'taxonomy_hs',
+        'weight' => '28',
       ),
       'workbench_access_field' => 0,
     ),
@@ -2166,10 +2174,10 @@ function gsb_feature_event_ct_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
-  t('All Day Event');
   t('Body');
   t('Business Insight Topic');
   t('Company Organization');
+  t('Department');
   t('Discipline');
   t('Editorial Summary');
   t('Event Category');

@@ -58,11 +58,4 @@ function gsb_feature_event_ct_form_gsb_event_node_form_alter(&$form, &$form_stat
 
     }
   }
-
-  if (!empty($form['body']['und'][0])) {
-    $language = $form['body']['#language'];
-    $form['body'][$language][0]['#maxlength'] = '150';
-    $form['body'][$language][0]['#description'] = t('Event description limited to 150 characters.');
-  }
-  
 }

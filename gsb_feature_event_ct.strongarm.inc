@@ -43,6 +43,9 @@ function gsb_feature_event_ct_strongarm() {
       'tiny' => array(
         'custom_settings' => TRUE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

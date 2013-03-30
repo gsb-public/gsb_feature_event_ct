@@ -23,7 +23,7 @@ function gsb_feature_event_ct_field_group_info() {
     'label' => 'Image',
     'weight' => '6',
     'children' => array(
-      0 => 'field_file_single_public',
+      0 => 'field_image_single_public',
       1 => 'field_image_caption',
     ),
     'format_type' => 'tab',

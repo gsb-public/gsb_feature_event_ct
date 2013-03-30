@@ -1293,14 +1293,14 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_file_single_public'.
-  $fields['node-event-field_file_single_public'] = array(
+  // Exported field: 'node-event-field_image_single_public'.
+  $fields['node-event-field_image_single_public'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_file_single_public',
+      'field_name' => 'field_image_single_public',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -1364,7 +1364,7 @@ function gsb_feature_event_ct_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_file_single_public',
+      'field_name' => 'field_image_single_public',
       'label' => 'Event Image',
       'required' => 0,
       'settings' => array(

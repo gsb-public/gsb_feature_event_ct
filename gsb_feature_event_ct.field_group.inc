@@ -13,10 +13,10 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_event_image|node|gsb_event|form';
+  $field_group->identifier = 'group_event_image|node|event|form';
   $field_group->group_name = 'group_event_image';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_event';
+  $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
@@ -36,15 +36,15 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_image|node|gsb_event|form'] = $field_group;
+  $export['group_event_image|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_event_location|node|gsb_event|form';
+  $field_group->identifier = 'group_event_location|node|event|form';
   $field_group->group_name = 'group_event_location';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_event';
+  $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
@@ -64,15 +64,15 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_location|node|gsb_event|form'] = $field_group;
+  $export['group_event_location|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_event_registration|node|gsb_event|form';
+  $field_group->identifier = 'group_event_registration|node|event|form';
   $field_group->group_name = 'group_event_registration';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_event';
+  $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
@@ -91,15 +91,15 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_registration|node|gsb_event|form'] = $field_group;
+  $export['group_event_registration|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_event_speakers|node|gsb_event|form';
+  $field_group->identifier = 'group_event_speakers|node|event|form';
   $field_group->group_name = 'group_event_speakers';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_event';
+  $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
@@ -118,15 +118,15 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_speakers|node|gsb_event|form'] = $field_group;
+  $export['group_event_speakers|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_location|node|gsb_event|form';
+  $field_group->identifier = 'group_location|node|event|form';
   $field_group->group_name = 'group_location';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_event';
+  $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -146,15 +146,15 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_location|node|gsb_event|form'] = $field_group;
+  $export['group_location|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_taxonomy|node|gsb_event|form';
+  $field_group->identifier = 'group_taxonomy|node|event|form';
   $field_group->group_name = 'group_taxonomy';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_event';
+  $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -182,7 +182,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_taxonomy|node|gsb_event|form'] = $field_group;
+  $export['group_taxonomy|node|event|form'] = $field_group;
 
   return $export;
 }

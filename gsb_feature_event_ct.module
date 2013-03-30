@@ -22,7 +22,7 @@ function gsb_feature_event_module_implements_alter(&$implementations, $hook) {
 /**
  * Implements hook_form_FORM_ID_alter() for event node edit form.
  */
-function gsb_feature_event_ct_form_gsb_event_node_form_alter(&$form, &$form_state) {
+function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
   if (!empty($form['field_speakers']['und'])) {
 

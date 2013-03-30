@@ -331,8 +331,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_address'.
-  $fields['node-gsb_event-field_address'] = array(
+  // Exported field: 'node-event-field_address'.
+  $fields['node-event-field_address'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -348,10 +348,10 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'addressfield',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => array(
         0 => array(
-          'element_key' => 'node|gsb_event|field_address|und|0',
+          'element_key' => 'node|event|field_address|und|0',
           'thoroughfare' => '',
           'premise' => '',
           'locality' => '',
@@ -433,8 +433,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_body'.
-  $fields['node-gsb_event-field_body'] = array(
+  // Exported field: 'node-event-field_body'.
+  $fields['node-event-field_body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -461,7 +461,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -527,8 +527,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_business_insight_topic'.
-  $fields['node-gsb_event-field_business_insight_topic'] = array(
+  // Exported field: 'node-event-field_business_insight_topic'.
+  $fields['node-event-field_business_insight_topic'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -562,7 +562,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -618,8 +618,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_company_organization'.
-  $fields['node-gsb_event-field_company_organization'] = array(
+  // Exported field: 'node-event-field_company_organization'.
+  $fields['node-event-field_company_organization'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -653,7 +653,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -712,8 +712,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_department'.
-  $fields['node-gsb_event-field_department'] = array(
+  // Exported field: 'node-event-field_department'.
+  $fields['node-event-field_department'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -747,7 +747,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -804,8 +804,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_discipline'.
-  $fields['node-gsb_event-field_discipline'] = array(
+  // Exported field: 'node-event-field_discipline'.
+  $fields['node-event-field_discipline'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -839,7 +839,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -895,8 +895,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_editorial_summary'.
-  $fields['node-gsb_event-field_editorial_summary'] = array(
+  // Exported field: 'node-event-field_editorial_summary'.
+  $fields['node-event-field_editorial_summary'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -923,7 +923,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -990,8 +990,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_event_category'.
-  $fields['node-gsb_event-field_event_category'] = array(
+  // Exported field: 'node-event-field_event_category'.
+  $fields['node-event-field_event_category'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1025,7 +1025,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1080,8 +1080,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_event_date'.
-  $fields['node-gsb_event-field_event_date'] = array(
+  // Exported field: 'node-event-field_event_date'.
+  $fields['node-event-field_event_date'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1112,7 +1112,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'datetime',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -1203,8 +1203,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_event_series'.
-  $fields['node-gsb_event-field_event_series'] = array(
+  // Exported field: 'node-event-field_event_series'.
+  $fields['node-event-field_event_series'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1238,7 +1238,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1293,8 +1293,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_file_single_public'.
-  $fields['node-gsb_event-field_file_single_public'] = array(
+  // Exported field: 'node-event-field_file_single_public'.
+  $fields['node-event-field_file_single_public'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1324,7 +1324,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -1416,8 +1416,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_image_caption'.
-  $fields['node-gsb_event-field_image_caption'] = array(
+  // Exported field: 'node-event-field_image_caption'.
+  $fields['node-event-field_image_caption'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1446,7 +1446,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1510,8 +1510,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_industry'.
-  $fields['node-gsb_event-field_industry'] = array(
+  // Exported field: 'node-event-field_industry'.
+  $fields['node-event-field_industry'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1545,7 +1545,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1601,8 +1601,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_link_map'.
-  $fields['node-gsb_event-field_link_map'] = array(
+  // Exported field: 'node-event-field_link_map'.
+  $fields['node-event-field_link_map'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1632,7 +1632,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1707,8 +1707,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_person_other'.
-  $fields['node-gsb_event-field_person_other'] = array(
+  // Exported field: 'node-event-field_person_other'.
+  $fields['node-event-field_person_other'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1727,7 +1727,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'field_collection',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1787,8 +1787,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_region'.
-  $fields['node-gsb_event-field_region'] = array(
+  // Exported field: 'node-event-field_region'.
+  $fields['node-event-field_region'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1822,7 +1822,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1878,8 +1878,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_register_url'.
-  $fields['node-gsb_event-field_register_url'] = array(
+  // Exported field: 'node-event-field_register_url'.
+  $fields['node-event-field_register_url'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1909,7 +1909,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1984,8 +1984,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_tag'.
-  $fields['node-gsb_event-field_tag'] = array(
+  // Exported field: 'node-event-field_tag'.
+  $fields['node-event-field_tag'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2019,7 +2019,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2078,8 +2078,8 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gsb_event-field_target_audience'.
-  $fields['node-gsb_event-field_target_audience'] = array(
+  // Exported field: 'node-event-field_target_audience'.
+  $fields['node-event-field_target_audience'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2113,7 +2113,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',

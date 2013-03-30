@@ -30,7 +30,7 @@ function gsb_feature_event_ct_views_api() {
  */
 function gsb_feature_event_ct_node_info() {
   $items = array(
-    'gsb_event' => array(
+    'event' => array(
       'name' => t('Event'),
       'base' => 'node_content',
       'description' => t('The GSB Public Event content type is used for events on the GSB Public web site.'),

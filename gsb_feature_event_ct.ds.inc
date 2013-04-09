@@ -1,0 +1,169 @@
+<?php
+/**
+ * @file
+ * gsb_feature_event_ct.ds.inc
+ */
+
+/**
+ * Implements hook_ds_field_settings_info().
+ */
+function gsb_feature_event_ct_ds_field_settings_info() {
+  $export = array();
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|event|default';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'event';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'field_link_map' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_minimal',
+        ),
+      ),
+    ),
+    'field_person_other' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'speaker-wrappr',
+          'fis-at' => '',
+          'fis-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'span',
+          'fi-cl' => 'speaker-name',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+        ),
+      ),
+    ),
+    'field_target_audience' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Event is open to',
+        ),
+      ),
+    ),
+  );
+  $export['node|event|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|event|teaser';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'event';
+  $ds_fieldsetting->view_mode = 'teaser';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+        'ft' => array(),
+        'conditions' => array(),
+      ),
+    ),
+  );
+  $export['node|event|teaser'] = $ds_fieldsetting;
+
+  return $export;
+}
+
+/**
+ * Implements hook_ds_layout_settings_info().
+ */
+function gsb_feature_event_ct_ds_layout_settings_info() {
+  $export = array();
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_2col_stacked';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'left' => array(
+        0 => 'field_event_date',
+        1 => 'title',
+        2 => 'field_person_other',
+        3 => 'field_address',
+        4 => 'field_link_map',
+        5 => 'field_register_url',
+      ),
+      'right' => array(
+        6 => 'field_image_single_public',
+        7 => 'field_target_audience',
+      ),
+      'footer' => array(
+        8 => 'field_editorial_summary',
+        9 => 'field_body',
+        10 => 'group_event_wrapper',
+        11 => 'field_discipline',
+        12 => 'field_event_series',
+        13 => 'field_event_category',
+        14 => 'field_business_insight_topic',
+        15 => 'field_industry',
+        16 => 'field_company_organization',
+        17 => 'field_tag',
+        18 => 'field_region',
+        19 => 'field_department',
+      ),
+    ),
+    'fields' => array(
+      'field_event_date' => 'left',
+      'title' => 'left',
+      'field_person_other' => 'left',
+      'field_address' => 'left',
+      'field_link_map' => 'left',
+      'field_register_url' => 'left',
+      'field_image_single_public' => 'right',
+      'field_target_audience' => 'right',
+      'field_editorial_summary' => 'footer',
+      'field_body' => 'footer',
+      'group_event_wrapper' => 'footer',
+      'field_discipline' => 'footer',
+      'field_event_series' => 'footer',
+      'field_event_category' => 'footer',
+      'field_business_insight_topic' => 'footer',
+      'field_industry' => 'footer',
+      'field_company_organization' => 'footer',
+      'field_tag' => 'footer',
+      'field_region' => 'footer',
+      'field_department' => 'footer',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'header' => 'div',
+      'left' => 'div',
+      'right' => 'div',
+      'footer' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+  );
+  $export['node|event|default'] = $ds_layout;
+
+  return $export;
+}

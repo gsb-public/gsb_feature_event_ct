@@ -46,13 +46,13 @@ function gsb_feature_event_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 2,
+          'weight' => '1',
         ),
         'ical' => array(
           'label' => 'above',
@@ -130,13 +130,13 @@ function gsb_feature_event_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 3,
+          'weight' => '2',
         ),
         'ical' => array(
           'label' => 'above',
@@ -211,13 +211,10 @@ function gsb_feature_event_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'list_default',
-          'weight' => 0,
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
         ),
         'ical' => array(
           'label' => 'above',
@@ -293,14 +290,14 @@ function gsb_feature_event_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'entityreference',
           'settings' => array(
             'conditions' => array(),
-            'link' => FALSE,
+            'link' => 1,
           ),
           'type' => 'entityreference_label',
-          'weight' => 1,
+          'weight' => '0',
         ),
         'ical' => array(
           'label' => 'above',
@@ -475,7 +472,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '10',
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -944,7 +941,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '9',
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1341,12 +1338,9 @@ function gsb_feature_event_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '8',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1662,8 +1656,8 @@ function gsb_feature_event_ct_field_default_fields() {
           'settings' => array(
             'conditions' => array(),
           ),
-          'type' => 'link_default',
-          'weight' => '5',
+          'type' => 'link_label',
+          'weight' => '4',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1757,14 +1751,10 @@ function gsb_feature_event_ct_field_default_fields() {
           'label' => 'hidden',
           'module' => 'field_collection',
           'settings' => array(
-            'add' => 'Add',
             'conditions' => array(),
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
             'view_mode' => 'full',
           ),
-          'type' => 'field_collection_view',
+          'type' => 'field_collection_fields',
           'weight' => '2',
         ),
         'featured' => array(
@@ -1944,7 +1934,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1971,6 +1961,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_register_url',
       'label' => 'Register URL',
@@ -1993,7 +1984,7 @@ function gsb_feature_event_ct_field_default_fields() {
         ),
         'title' => 'value',
         'title_maxlength' => '128',
-        'title_value' => 'Register URL',
+        'title_value' => 'Register',
         'url' => 0,
         'user_register_form' => FALSE,
         'validate_url' => 1,
@@ -2001,7 +1992,9 @@ function gsb_feature_event_ct_field_default_fields() {
       'widget' => array(
         'active' => 0,
         'module' => 'link',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
         'type' => 'link_field',
         'weight' => '13',
       ),
@@ -2145,7 +2138,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),

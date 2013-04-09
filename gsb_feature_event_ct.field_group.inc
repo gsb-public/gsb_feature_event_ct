@@ -123,6 +123,84 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_event_wrapper|node|event|default';
+  $field_group->group_name = 'group_event_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tags:',
+    'weight' => '11',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+      1 => 'field_company_organization',
+      2 => 'field_department',
+      3 => 'field_discipline',
+      4 => 'field_event_category',
+      5 => 'field_event_series',
+      6 => 'field_industry',
+      7 => 'field_region',
+      8 => 'field_tag',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tags:',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_event_wrapper|node|event|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_event_wrapper|node|event|full';
+  $field_group->group_name = 'group_event_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'full';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tag wrapper',
+    'weight' => '11',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+      1 => 'field_company_organization',
+      2 => 'field_department',
+      3 => 'field_discipline',
+      4 => 'field_event_category',
+      5 => 'field_event_series',
+      6 => 'field_industry',
+      7 => 'field_region',
+      8 => 'field_tag',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tag wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_event_wrapper|node|event|full'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_location|node|event|form';
   $field_group->group_name = 'group_location';
   $field_group->entity_type = 'node';
@@ -163,14 +241,14 @@ function gsb_feature_event_ct_field_group_info() {
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
-      2 => 'field_discipline',
-      3 => 'field_event_category',
-      4 => 'field_event_series',
-      5 => 'field_industry',
-      6 => 'field_region',
-      7 => 'field_tag',
-      8 => 'field_target_audience',
-      9 => 'field_department',
+      2 => 'field_department',
+      3 => 'field_discipline',
+      4 => 'field_event_category',
+      5 => 'field_event_series',
+      6 => 'field_industry',
+      7 => 'field_region',
+      8 => 'field_tag',
+      9 => 'field_target_audience',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -183,6 +261,38 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_taxonomy|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_teaser|node|event|teaser';
+  $field_group->group_name = 'group_wrapper_teaser';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Teaser wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_editorial_summary',
+      1 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Teaser wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_teaser|node|event|teaser'] = $field_group;
 
   return $export;
 }

@@ -21,6 +21,7 @@ dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = field_group
 dependencies[] = file
+dependencies[] = gsb_field_formatter
 dependencies[] = hs_taxonomy
 dependencies[] = image
 dependencies[] = link

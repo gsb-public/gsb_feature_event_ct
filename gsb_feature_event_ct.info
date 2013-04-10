@@ -74,6 +74,7 @@ features[field_group][] = group_event_wrapper|node|event|default
 features[field_group][] = group_event_wrapper|node|event|full
 features[field_group][] = group_location|node|event|form
 features[field_group][] = group_taxonomy|node|event|form
+features[field_group][] = group_wrapper_buttons|node|event|default
 features[field_group][] = group_wrapper_teaser|node|event|teaser
 features[node][] = event
 features[variable][] = field_bundle_settings_node__event

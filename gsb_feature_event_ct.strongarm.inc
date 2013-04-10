@@ -49,6 +49,9 @@ function gsb_feature_event_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'megamenu' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -68,7 +71,14 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '9',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'gsb_feature_event_display_ical' => array(
+          'default' => array(
+            'weight' => '7',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__event'] = $strongarm;

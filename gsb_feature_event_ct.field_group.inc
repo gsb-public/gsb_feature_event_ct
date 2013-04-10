@@ -131,7 +131,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '10',
+    'weight' => '12',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
@@ -261,6 +261,38 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_taxonomy|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_buttons|node|event|default';
+  $field_group->group_name = 'group_wrapper_buttons';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Button wrapper',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_register_url',
+      1 => 'gsb_feature_event_display_ical',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Button wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_buttons|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

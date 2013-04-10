@@ -472,7 +472,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '9',
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -941,7 +941,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '8',
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1340,7 +1340,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '18',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1438,7 +1438,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => '6',
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1934,7 +1934,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => '5',
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2144,7 +2144,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '7',
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',

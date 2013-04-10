@@ -118,7 +118,20 @@ function gsb_feature_event_ct_ds_field_settings_info() {
     'field_target_audience' => array(
       'formatter_settings' => array(
         'ft' => array(
+          'func' => 'theme_ds_field_expert',
           'lb' => 'Event is open to',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'span',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
         ),
       ),
     ),
@@ -133,7 +146,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '2',
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -210,18 +223,17 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         9 => 'field_target_audience',
       ),
       'footer' => array(
-        10 => 'field_editorial_summary',
-        11 => 'field_body',
-        12 => 'group_event_wrapper',
-        13 => 'field_discipline',
-        14 => 'field_event_series',
-        15 => 'field_event_category',
-        16 => 'field_business_insight_topic',
-        17 => 'field_industry',
-        18 => 'field_company_organization',
-        19 => 'field_tag',
-        20 => 'field_region',
-        21 => 'field_department',
+        10 => 'field_body',
+        11 => 'group_event_wrapper',
+        12 => 'field_discipline',
+        13 => 'field_event_series',
+        14 => 'field_event_category',
+        15 => 'field_business_insight_topic',
+        16 => 'field_industry',
+        17 => 'field_company_organization',
+        18 => 'field_tag',
+        19 => 'field_region',
+        20 => 'field_department',
       ),
     ),
     'fields' => array(
@@ -235,7 +247,6 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'gsb_feature_event_display_ical' => 'left',
       'field_image_single_public' => 'right',
       'field_target_audience' => 'right',
-      'field_editorial_summary' => 'footer',
       'field_body' => 'footer',
       'group_event_wrapper' => 'footer',
       'field_discipline' => 'footer',

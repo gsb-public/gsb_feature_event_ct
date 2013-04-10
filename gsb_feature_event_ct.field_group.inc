@@ -308,7 +308,8 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_editorial_summary',
-      1 => 'title',
+      1 => 'field_event_date',
+      2 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(

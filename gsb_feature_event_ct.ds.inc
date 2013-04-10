@@ -272,5 +272,39 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
   );
   $export['node|event|default'] = $ds_layout;
 
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|teaser';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'teaser';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_image_single_public',
+        1 => 'group_wrapper_teaser',
+        2 => 'field_event_date',
+        3 => 'title',
+        4 => 'field_editorial_summary',
+      ),
+    ),
+    'fields' => array(
+      'field_image_single_public' => 'ds_content',
+      'group_wrapper_teaser' => 'ds_content',
+      'field_event_date' => 'ds_content',
+      'title' => 'ds_content',
+      'field_editorial_summary' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+  );
+  $export['node|event|teaser'] = $ds_layout;
+
   return $export;
 }

@@ -42,6 +42,7 @@ features[ds_field_settings][] = node|event|default
 features[ds_field_settings][] = node|event|teaser
 features[ds_layout_settings][] = field_collection_item|field_person_other|default
 features[ds_layout_settings][] = node|event|default
+features[ds_layout_settings][] = node|event|teaser
 features[features_api][] = api:1
 features[field][] = field_collection_item-field_person_other-field_first_name
 features[field][] = field_collection_item-field_person_other-field_last_name

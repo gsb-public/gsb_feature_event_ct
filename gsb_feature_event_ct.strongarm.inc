@@ -23,7 +23,7 @@ function gsb_feature_event_ct_strongarm() {
         'custom_settings' => TRUE,
       ),
       'featured' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
@@ -41,7 +41,7 @@ function gsb_feature_event_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'tiny' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'diff_standard' => array(
         'custom_settings' => FALSE,
@@ -50,7 +50,7 @@ function gsb_feature_event_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'megamenu' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -77,9 +77,9 @@ function gsb_feature_event_ct_strongarm() {
             'weight' => '7',
             'visible' => TRUE,
           ),
-          'teaser' => array(
+          'megamenu' => array(
             'weight' => '7',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
         ),
       ),

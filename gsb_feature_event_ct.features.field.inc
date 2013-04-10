@@ -392,11 +392,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '13',
+          'weight' => '15',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -486,11 +492,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '18',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -589,11 +601,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '15',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '12',
+          'weight' => '14',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -681,11 +699,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '17',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '9',
+          'weight' => '10',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -776,11 +800,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '20',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '17',
+          'weight' => '19',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -870,11 +900,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '12',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '14',
+          'weight' => '16',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -936,8 +972,11 @@ function gsb_feature_event_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
           'weight' => '10',
         ),
         'featured' => array(
@@ -952,6 +991,12 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '10',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -959,7 +1004,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1058,11 +1103,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '14',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '23',
+          'weight' => '25',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1161,12 +1212,12 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'date_default',
           'weight' => '1',
         ),
-        'teaser' => array(
+        'megamenu' => array(
           'label' => 'hidden',
           'module' => 'date',
           'settings' => array(
             'conditions' => array(),
-            'format_type' => 'long',
+            'format_type' => 'long_time',
             'fromto' => 'both',
             'multiple_from' => '',
             'multiple_number' => '',
@@ -1174,7 +1225,13 @@ function gsb_feature_event_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1276,11 +1333,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '13',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '19',
+          'weight' => '21',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1360,11 +1423,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '18',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '15',
+          'weight' => '17',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1457,6 +1526,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'conditions' => array(),
+            'image_link' => '',
+            'image_style' => '270x158',
+          ),
+          'type' => 'image',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -1589,11 +1669,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '9',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1677,11 +1763,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '18',
+          'weight' => '20',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1755,13 +1847,12 @@ function gsb_feature_event_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'gsb_field_formatter',
+          'module' => 'field_collection',
           'settings' => array(
             'conditions' => array(),
-            'separator' => ', ',
             'view_mode' => 'full',
           ),
-          'type' => 'gsb_field_formatter_field_collection_separator',
+          'type' => 'field_collection_fields',
           'weight' => '2',
         ),
         'featured' => array(
@@ -1776,11 +1867,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => '4',
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '22',
+          'weight' => '24',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1867,11 +1964,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '19',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '11',
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1955,11 +2058,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '20',
+          'weight' => '22',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2070,11 +2179,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '18',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '10',
+          'weight' => '11',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2150,7 +2265,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'settings' => array(
             'conditions' => array(),
           ),
-          'type' => 'taxonomy_term_reference_plain',
+          'type' => 'taxonomy_term_reference_link',
           'weight' => '9',
         ),
         'featured' => array(
@@ -2165,11 +2280,17 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'inline',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '21',
+          'weight' => '23',
         ),
         'tiny' => array(
           'label' => 'above',

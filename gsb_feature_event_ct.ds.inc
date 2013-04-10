@@ -118,25 +118,43 @@ function gsb_feature_event_ct_ds_field_settings_info() {
     'field_target_audience' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'lb' => 'Event is open to',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'span',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
         ),
       ),
     ),
   );
   $export['node|event|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|event|megamenu';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'event';
+  $ds_fieldsetting->view_mode = 'megamenu';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h4',
+        'class' => '',
+        'ft' => array(
+          'func' => 'theme_ds_field_minimal',
+        ),
+        'conditions' => array(),
+      ),
+    ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_minimal',
+        ),
+      ),
+    ),
+  );
+  $export['node|event|megamenu'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -216,13 +234,13 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         4 => 'field_link_map',
         5 => 'group_wrapper_buttons',
         6 => 'field_register_url',
-        7 => 'gsb_feature_event_display_ical',
       ),
       'right' => array(
-        8 => 'field_image_single_public',
-        9 => 'field_target_audience',
+        7 => 'field_image_single_public',
+        8 => 'field_target_audience',
       ),
       'footer' => array(
+        9 => 'field_editorial_summary',
         10 => 'field_body',
         11 => 'group_event_wrapper',
         12 => 'field_discipline',
@@ -244,9 +262,9 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_link_map' => 'left',
       'group_wrapper_buttons' => 'left',
       'field_register_url' => 'left',
-      'gsb_feature_event_display_ical' => 'left',
       'field_image_single_public' => 'right',
       'field_target_audience' => 'right',
+      'field_editorial_summary' => 'footer',
       'field_body' => 'footer',
       'group_event_wrapper' => 'footer',
       'field_discipline' => 'footer',
@@ -271,6 +289,39 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
   );
   $export['node|event|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|megamenu';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'megamenu';
+  $ds_layout->layout = 'ds_2col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'right' => array(
+        0 => 'field_event_date',
+        1 => 'title',
+      ),
+      'left' => array(
+        2 => 'field_image_single_public',
+      ),
+    ),
+    'fields' => array(
+      'field_event_date' => 'right',
+      'title' => 'right',
+      'field_image_single_public' => 'left',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+  );
+  $export['node|event|megamenu'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

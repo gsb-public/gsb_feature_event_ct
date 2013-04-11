@@ -12,6 +12,55 @@ function gsb_feature_event_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_person_fac_other|default';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_person_fac_other';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'field_person_ref' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_first_name' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_last_name' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['field_collection_item|field_person_fac_other|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'field_collection_item|field_person_other|default';
   $ds_fieldsetting->entity_type = 'field_collection_item';
   $ds_fieldsetting->bundle = 'field_person_other';
@@ -75,30 +124,6 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_minimal',
-        ),
-      ),
-    ),
-    'field_person_other' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'speaker-wrapper',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'span',
-          'fi-cl' => 'speaker-name',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
         ),
       ),
     ),
@@ -189,6 +214,36 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'field_collection_item|field_person_fac_other|default';
+  $ds_layout->entity_type = 'field_collection_item';
+  $ds_layout->bundle = 'field_person_fac_other';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_person_ref',
+        1 => 'field_first_name',
+        2 => 'field_last_name',
+      ),
+    ),
+    'fields' => array(
+      'field_person_ref' => 'ds_content',
+      'field_first_name' => 'ds_content',
+      'field_last_name' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+  );
+  $export['field_collection_item|field_person_fac_other|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'field_collection_item|field_person_other|default';
   $ds_layout->entity_type = 'field_collection_item';
   $ds_layout->bundle = 'field_person_other';
@@ -229,14 +284,14 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_event_date',
         1 => 'title',
-        2 => 'field_person_other',
+        2 => 'field_person_fac_other',
         3 => 'field_address',
         4 => 'field_link_map',
         5 => 'group_wrapper_buttons',
-        6 => 'field_register_url',
+        7 => 'field_register_url',
       ),
       'right' => array(
-        7 => 'field_image_single_public',
+        6 => 'field_image_single_public',
         8 => 'field_target_audience',
       ),
       'footer' => array(
@@ -257,12 +312,12 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'fields' => array(
       'field_event_date' => 'left',
       'title' => 'left',
-      'field_person_other' => 'left',
+      'field_person_fac_other' => 'left',
       'field_address' => 'left',
       'field_link_map' => 'left',
       'group_wrapper_buttons' => 'left',
-      'field_register_url' => 'left',
       'field_image_single_public' => 'right',
+      'field_register_url' => 'left',
       'field_target_audience' => 'right',
       'field_editorial_summary' => 'footer',
       'field_body' => 'footer',

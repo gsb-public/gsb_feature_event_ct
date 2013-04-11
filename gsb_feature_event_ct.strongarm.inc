@@ -13,6 +13,32 @@ function gsb_feature_event_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_field_collection_item__field_person_fac_other';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'ical' => array(
+        'custom_settings' => TRUE,
+      ),
+      'tiny' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_field_collection_item__field_person_fac_other'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__event';
   $strongarm->value = array(
     'view_modes' => array(
@@ -74,8 +100,8 @@ function gsb_feature_event_ct_strongarm() {
       'display' => array(
         'gsb_feature_event_display_ical' => array(
           'default' => array(
-            'weight' => '7',
-            'visible' => TRUE,
+            'weight' => '16',
+            'visible' => FALSE,
           ),
           'megamenu' => array(
             'weight' => '7',

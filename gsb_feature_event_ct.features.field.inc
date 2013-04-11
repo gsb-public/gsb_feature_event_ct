@@ -10,6 +10,340 @@
 function gsb_feature_event_ct_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'field_collection_item-field_person_fac_other-field_first_name'.
+  $fields['field_collection_item-field_person_fac_other-field_first_name'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_first_name',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_person_fac_other',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_first_name',
+      'label' => 'First Name',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '2',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_person_fac_other-field_last_name'.
+  $fields['field_collection_item-field_person_fac_other-field_last_name'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_last_name',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_person_fac_other',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_last_name',
+      'label' => 'Last Name',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '3',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_person_fac_other-field_person_or_other'.
+  $fields['field_collection_item-field_person_fac_other-field_person_or_other'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_person_or_other',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'UseEntityReference' => 'Faculty',
+          'Other' => 'Other',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_person_fac_other',
+      'default_value' => array(
+        0 => array(
+          'value' => 'Other',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_person_or_other',
+      'label' => 'Speaker Reference',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'maxlength_js_label' => '',
+        ),
+        'type' => 'options_buttons',
+        'weight' => '0',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_person_fac_other-field_person_ref'.
+  $fields['field_collection_item-field_person_fac_other-field_person_ref'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_person_ref',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'views',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'gsb_people_autocomplete',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_person_fac_other',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'entityreference',
+          'settings' => array(
+            'conditions' => array(),
+            'link' => 1,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => '0',
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_person_ref',
+      'label' => 'Speaker',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'maxlength_js_label' => '',
+          'path' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '1',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
   // Exported field: 'field_collection_item-field_person_other-field_first_name'.
   $fields['field_collection_item-field_person_other-field_first_name'] = array(
     'field_config' => array(
@@ -196,7 +530,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'UseEntityReference' => 'Fac/Staff',
+          'UseEntityReference' => 'Faculty',
           'Other' => 'Other',
         ),
         'allowed_values_function' => '',
@@ -206,7 +540,11 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'field_person_other',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => 'Other',
+        ),
+      ),
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -229,6 +567,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_person_or_other',
       'label' => 'Speaker Reference',
@@ -266,17 +605,18 @@ function gsb_feature_event_ct_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'type' => 'none',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'gsb_people_autocomplete',
           ),
-          'target_bundles' => array(),
         ),
         'target_type' => 'node',
       ),
@@ -478,7 +818,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '11',
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -743,7 +1083,7 @@ function gsb_feature_event_ct_field_default_fields() {
   $fields['node-event-field_department'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_department',
@@ -977,7 +1317,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '10',
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1409,7 +1749,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '18',
+          'weight' => '17',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1513,7 +1853,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => '8',
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1820,20 +2160,20 @@ function gsb_feature_event_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_person_other'.
-  $fields['node-event-field_person_other'] = array(
+  // Exported field: 'node-event-field_person_fac_other'.
+  $fields['node-event-field_person_fac_other'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_person_other',
+      'field_name' => 'field_person_fac_other',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
-        'hide_blank_items' => TRUE,
+        'hide_blank_items' => 1,
         'path' => '',
       ),
       'translatable' => '0',
@@ -1855,39 +2195,28 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'field_collection_fields',
           'weight' => '2',
         ),
-        'featured' => array(
+        'ical' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'ical' => array(
+        'megamenu' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
-        ),
-        'megamenu' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '2',
+          'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '24',
-        ),
-        'tiny' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
-      'field_name' => 'field_person_other',
+      'field_name' => 'field_person_fac_other',
       'label' => 'Speakers',
       'required' => 0,
       'settings' => array(
@@ -1896,10 +2225,13 @@ function gsb_feature_event_ct_field_default_fields() {
       'widget' => array(
         'active' => 0,
         'module' => 'field_collection',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => '',
+        ),
         'type' => 'field_collection_embed',
-        'weight' => '10',
+        'weight' => '11',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -2266,7 +2598,7 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '9',
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',

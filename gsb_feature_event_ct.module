@@ -26,31 +26,31 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
   $language = $form['language']['#value'];
 
-  if (!empty($form['field_person_other'][$language])) {
+  if (!empty($form['field_person_fac_other'][$language])) {
 
-    foreach ($form['field_person_other'][$language] as $index => $data) {
+    foreach ($form['field_person_fac_other'][$language] as $index => $data) {
 
       if (is_integer($index)) {
 
-        $form['field_person_other'][$language][$index]['field_person_ref']['#states'] = array(
+        $form['field_person_fac_other'][$language][$index]['field_person_ref']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
               array('value' => 'UseEntityReference'),
             ),
           ),
         );
 
-        $form['field_person_other'][$language][$index]['field_first_name']['#states'] = array(
+        $form['field_person_fac_other'][$language][$index]['field_first_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),
         );
 
-        $form['field_person_other'][$language][$index]['field_last_name']['#states'] = array(
+        $form['field_person_fac_other'][$language][$index]['field_last_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),

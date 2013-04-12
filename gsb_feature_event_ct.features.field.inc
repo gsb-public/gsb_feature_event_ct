@@ -198,7 +198,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'UseEntityReference' => 'Fac/Staff',
+          'UseEntityReference' => 'Faculty',
           'Other' => 'Other',
         ),
         'allowed_values_function' => '',

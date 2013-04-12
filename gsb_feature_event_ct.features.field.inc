@@ -198,7 +198,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'UseEntityReference' => 'Faculty',
+          'UseEntityReference' => 'Fac/Staff',
           'Other' => 'Other',
         ),
         'allowed_values_function' => '',
@@ -530,7 +530,7 @@ function gsb_feature_event_ct_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'UseEntityReference' => 'Faculty',
+          'UseEntityReference' => 'Fac/Staff',
           'Other' => 'Other',
         ),
         'allowed_values_function' => '',
@@ -2122,9 +2122,10 @@ function gsb_feature_event_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_link_map',
-      'label' => 'Map URL',
+      'label' => 'View Map',
       'required' => 0,
       'settings' => array(
         'attributes' => array(
@@ -2152,7 +2153,9 @@ function gsb_feature_event_ct_field_default_fields() {
       'widget' => array(
         'active' => 0,
         'module' => 'link',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
         'type' => 'link_field',
         'weight' => '8',
       ),
@@ -2669,7 +2672,6 @@ function gsb_feature_event_ct_field_default_fields() {
   t('First Name');
   t('Industry');
   t('Last Name');
-  t('Map URL');
   t('Region');
   t('Register URL');
   t('Speaker');
@@ -2677,6 +2679,7 @@ function gsb_feature_event_ct_field_default_fields() {
   t('Speakers');
   t('Tag');
   t('Target Audience');
+  t('View Map');
 
   return $fields;
 }

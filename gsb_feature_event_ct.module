@@ -32,9 +32,9 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
       if (is_integer($index)) {
 
-        $form['field_person_fac_other'][$language][$index]['field_person_ref']['#states'] = array(
+        $form['field_person_fac_other'][$language][$index]['field_person_fac_single_ref']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
               array('value' => 'UseEntityReference'),
             ),
           ),
@@ -42,7 +42,7 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
         $form['field_person_fac_other'][$language][$index]['field_first_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),
@@ -50,7 +50,7 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
         $form['field_person_fac_other'][$language][$index]['field_last_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_person_fac_other[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),

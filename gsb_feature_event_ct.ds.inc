@@ -17,19 +17,6 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'field_person_fac_other';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'field_person_ref' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
     'field_first_name' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -44,6 +31,32 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       ),
     ),
     'field_last_name' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_person_ref' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_person_fac_single_ref' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -223,12 +236,14 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_person_ref',
-        1 => 'field_first_name',
-        2 => 'field_last_name',
+        1 => 'field_person_fac_single_ref',
+        2 => 'field_first_name',
+        3 => 'field_last_name',
       ),
     ),
     'fields' => array(
       'field_person_ref' => 'ds_content',
+      'field_person_fac_single_ref' => 'ds_content',
       'field_first_name' => 'ds_content',
       'field_last_name' => 'ds_content',
     ),

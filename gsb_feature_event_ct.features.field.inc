@@ -52,9 +52,15 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -89,7 +95,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '2',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
@@ -137,9 +143,15 @@ function gsb_feature_event_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -174,20 +186,20 @@ function gsb_feature_event_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
   );
 
-  // Exported field: 'field_collection_item-field_person_fac_other-field_person_or_other'.
-  $fields['field_collection_item-field_person_fac_other-field_person_or_other'] = array(
+  // Exported field: 'field_collection_item-field_person_fac_other-field_person_fac_or_other'.
+  $fields['field_collection_item-field_person_fac_other-field_person_fac_or_other'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_person_or_other',
+      'field_name' => 'field_person_fac_or_other',
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -220,9 +232,15 @@ function gsb_feature_event_ct_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '5',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -237,9 +255,9 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'ds_extras_field_template' => '',
       'entity_type' => 'field_collection_item',
-      'field_name' => 'field_person_or_other',
+      'field_name' => 'field_person_fac_or_other',
       'label' => 'Speaker Reference',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -250,21 +268,28 @@ function gsb_feature_event_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'options_buttons',
-        'weight' => '0',
+        'weight' => '1',
       ),
       'workbench_access_field' => 0,
     ),
   );
 
-  // Exported field: 'field_collection_item-field_person_fac_other-field_person_ref'.
-  $fields['field_collection_item-field_person_fac_other-field_person_ref'] = array(
+  // Exported field: 'field_collection_item-field_person_fac_other-field_person_fac_single_ref'.
+  $fields['field_collection_item-field_person_fac_other-field_person_fac_single_ref'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_person_ref',
-      'foreign keys' => array(),
+      'field_name' => 'field_person_fac_single_ref',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -281,7 +306,9 @@ function gsb_feature_event_ct_field_default_fields() {
             ),
           ),
           'view' => array(
-            'args' => array(),
+            'args' => array(
+              0 => 'faculty',
+            ),
             'display_name' => 'entityreference_1',
             'view_name' => 'gsb_people_autocomplete',
           ),
@@ -305,9 +332,15 @@ function gsb_feature_event_ct_field_default_fields() {
             'link' => 1,
           ),
           'type' => 'entityreference_label',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -322,10 +355,15 @@ function gsb_feature_event_ct_field_default_fields() {
       ),
       'ds_extras_field_template' => '',
       'entity_type' => 'field_collection_item',
-      'field_name' => 'field_person_ref',
+      'field_name' => 'field_person_fac_single_ref',
       'label' => 'Speaker',
       'required' => 0,
       'settings' => array(
+        'behaviors' => array(
+          'taxonomy-index' => array(
+            'status' => TRUE,
+          ),
+        ),
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -338,7 +376,7 @@ function gsb_feature_event_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '1',
+        'weight' => '3',
       ),
       'workbench_access_field' => 0,
     ),
@@ -389,6 +427,12 @@ function gsb_feature_event_ct_field_default_fields() {
           'weight' => '1',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -478,6 +522,12 @@ function gsb_feature_event_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'research_pager' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'tiny' => array(
           'label' => 'above',
           'settings' => array(),
@@ -555,6 +605,12 @@ function gsb_feature_event_ct_field_default_fields() {
           'weight' => '3',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -640,6 +696,12 @@ function gsb_feature_event_ct_field_default_fields() {
           'weight' => '0',
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',

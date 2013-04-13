@@ -28,6 +28,12 @@ function gsb_feature_event_ct_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'research_pager' => array(
+        'custom_settings' => TRUE,
+      ),
+      'people_fpp' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),

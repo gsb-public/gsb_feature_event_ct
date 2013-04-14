@@ -15,7 +15,6 @@ dependencies[] = defaultconfig
 dependencies[] = ds
 dependencies[] = email
 dependencies[] = entity
-dependencies[] = entity_view_mode
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_collection

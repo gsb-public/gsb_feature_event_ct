@@ -202,7 +202,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '3',
+      'weight' => '13',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -211,6 +211,11 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         'class' => '',
         'ft' => array(),
         'conditions' => array(),
+      ),
+    ),
+    'field_address' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
   );
@@ -405,17 +410,41 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_image_single_public',
         1 => 'group_wrapper_teaser',
-        2 => 'field_event_date',
-        3 => 'title',
-        4 => 'field_editorial_summary',
+        2 => 'field_industry',
+        3 => 'field_region',
+        4 => 'field_company_organization',
+        5 => 'field_event_date',
+        6 => 'field_tag',
+        7 => 'field_business_insight_topic',
+        8 => 'title',
+        9 => 'field_discipline',
+        10 => 'field_address',
+        11 => 'field_department',
+        12 => 'field_editorial_summary',
+        13 => 'field_event_series',
+        14 => 'group_tags_wrapper',
+        15 => 'field_target_audience',
+        16 => 'field_event_category',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
       'group_wrapper_teaser' => 'ds_content',
+      'field_industry' => 'ds_content',
+      'field_region' => 'ds_content',
+      'field_company_organization' => 'ds_content',
       'field_event_date' => 'ds_content',
+      'field_tag' => 'ds_content',
+      'field_business_insight_topic' => 'ds_content',
       'title' => 'ds_content',
+      'field_discipline' => 'ds_content',
+      'field_address' => 'ds_content',
+      'field_department' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
+      'field_event_series' => 'ds_content',
+      'group_tags_wrapper' => 'ds_content',
+      'field_target_audience' => 'ds_content',
+      'field_event_category' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

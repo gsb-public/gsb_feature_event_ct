@@ -82,6 +82,7 @@ features[field_group][] = group_event_speakers|node|event|form
 features[field_group][] = group_event_wrapper|node|event|default
 features[field_group][] = group_event_wrapper|node|event|full
 features[field_group][] = group_location|node|event|form
+features[field_group][] = group_tags_wrapper|node|event|teaser
 features[field_group][] = group_taxonomy|node|event|form
 features[field_group][] = group_wrapper_buttons|node|event|default
 features[field_group][] = group_wrapper_teaser|node|event|teaser

@@ -11,7 +11,6 @@ dependencies[] = date_all_day
 dependencies[] = date_ical
 dependencies[] = date_repeat
 dependencies[] = date_repeat_field
-dependencies[] = defaultconfig
 dependencies[] = ds
 dependencies[] = email
 dependencies[] = entity

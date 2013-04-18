@@ -34,6 +34,9 @@ function gsb_feature_event_ct_strongarm() {
       'people_fpp' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -83,6 +86,12 @@ function gsb_feature_event_ct_strongarm() {
       ),
       'megamenu' => array(
         'custom_settings' => TRUE,
+      ),
+      'business_insight' => array(
+        'custom_settings' => FALSE,
+      ),
+      'people_fpp' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(

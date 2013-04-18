@@ -1620,12 +1620,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'field_collection',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
+          'separator' => ', ',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_fields',
+        'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 2,
       ),
       'ical' => array(

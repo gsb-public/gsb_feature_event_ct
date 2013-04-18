@@ -56,6 +56,9 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
           ),
         );
 
+        // remove "n/a" as an option for the fac_or_other
+        unset($form['field_person_fac_other'][$language][$index]['field_person_fac_or_other'][$language]['#options']['_none']);
+
       }
 
     }

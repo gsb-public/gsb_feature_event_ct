@@ -174,7 +174,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_person_fac_or_other',
     'label' => 'Speaker Reference',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),

@@ -94,6 +94,7 @@ features[variable][] = menu_parent_event
 features[variable][] = node_options_event
 features[variable][] = node_preview_event
 features[variable][] = node_submitted_event
+features[variable][] = pathauto_node_event_pattern
 features_exclude[taxonomy][academic_area] = academic_area
 features_exclude[taxonomy][business_insight_topic] = business_insight_topic
 features_exclude[taxonomy][company_organization] = company_organization

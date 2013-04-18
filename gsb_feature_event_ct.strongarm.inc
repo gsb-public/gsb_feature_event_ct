@@ -115,8 +115,8 @@ function gsb_feature_event_ct_strongarm() {
       'display' => array(
         'gsb_feature_event_display_ical' => array(
           'default' => array(
-            'weight' => '16',
-            'visible' => FALSE,
+            'weight' => '7',
+            'visible' => TRUE,
           ),
           'megamenu' => array(
             'weight' => '7',
@@ -169,6 +169,13 @@ function gsb_feature_event_ct_strongarm() {
   $strongarm->name = 'node_submitted_event';
   $strongarm->value = 0;
   $export['node_submitted_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_event_pattern';
+  $strongarm->value = 'events/[node:title]';
+  $export['pathauto_node_event_pattern'] = $strongarm;
 
   return $export;
 }

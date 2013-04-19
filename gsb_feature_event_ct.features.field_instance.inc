@@ -677,11 +677,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 15,
       ),
       'featured' => array(
@@ -746,11 +748,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 17,
       ),
       'featured' => array(
@@ -818,11 +822,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 20,
       ),
       'featured' => array(
@@ -889,11 +895,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 12,
       ),
       'featured' => array(
@@ -1036,11 +1044,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 14,
       ),
       'featured' => array(
@@ -1215,11 +1225,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 13,
       ),
       'featured' => array(
@@ -1394,11 +1406,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 16,
       ),
       'featured' => array(
@@ -1607,11 +1621,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 19,
       ),
       'featured' => array(
@@ -1763,11 +1779,13 @@ events/*',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'ds_taxonomy_separator',
         'weight' => 18,
       ),
       'featured' => array(

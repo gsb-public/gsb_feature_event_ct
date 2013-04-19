@@ -104,3 +104,10 @@ features_exclude[taxonomy][target_audience] = target_audience
 features_exclude[taxonomy][discipline] = discipline
 features_exclude[taxonomy][tag] = tag
 features_exclude[taxonomy][department] = department
+
+
+; Information added by drush on 2013-04-19
+version = "master-dev"
+project = "gsb_feature_event_ct"
+datestamp = "1366396214"
+

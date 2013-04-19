@@ -26,6 +26,10 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
   $language = $form['language']['#value'];
 
+  // Hide date repeat for now.  Need to figure out how to show the correct date 
+  // in views before enabling.
+  $form['field_event_date']['#after_build'][] = 'gsb_feature_event_ct_hide_date_repeat';
+
   if (!empty($form['field_person_fac_other'][$language])) {
 
     foreach ($form['field_person_fac_other'][$language] as $index => $data) {
@@ -63,4 +67,13 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
     }
   }
+}
+
+/**
+ * Hides the date repeat field until we can get repeats fixed.
+ */
+function gsb_feature_event_ct_hide_date_repeat($element, &$form_state) {
+  $element[$element['#language']][0]['rrule']['#access'] = FALSE;
+  $element[$element['#language']][0]['show_repeat_settings']['#access'] = FALSE;
+  return $element;
 }

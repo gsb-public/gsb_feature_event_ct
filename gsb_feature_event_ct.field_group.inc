@@ -123,6 +123,34 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_location|node|event|form';
+  $field_group->group_name = 'group_location';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Location',
+    'weight' => '5',
+    'children' => array(
+      0 => 'group_event_image',
+      1 => 'group_event_location',
+      2 => 'group_event_registration',
+      3 => 'group_event_speakers',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_location|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tags_wrapper|node|event|default';
   $field_group->group_name = 'group_tags_wrapper';
   $field_group->entity_type = 'node';
@@ -201,34 +229,6 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_location|node|event|form';
-  $field_group->group_name = 'group_location';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'event';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Location',
-    'weight' => '5',
-    'children' => array(
-      0 => 'group_event_image',
-      1 => 'group_event_location',
-      2 => 'group_event_registration',
-      3 => 'group_event_speakers',
-    ),
-    'format_type' => 'tabs',
-    'format_settings' => array(
-      'formatter' => '',
-      'instance_settings' => array(
-        'classes' => '',
-      ),
-    ),
-  );
-  $export['group_location|node|event|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_tags_wrapper|node|event|teaser';
   $field_group->group_name = 'group_tags_wrapper';
   $field_group->entity_type = 'node';
@@ -237,7 +237,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '16',
+    'weight' => '5',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',

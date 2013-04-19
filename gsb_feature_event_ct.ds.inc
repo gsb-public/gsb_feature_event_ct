@@ -120,6 +120,11 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_link_map' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -189,7 +194,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '13',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -391,18 +396,18 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'field_industry',
-        2 => 'field_region',
-        3 => 'field_company_organization',
-        4 => 'field_event_date',
-        5 => 'field_tag',
-        6 => 'title',
-        7 => 'field_business_insight_topic',
-        8 => 'field_address',
-        9 => 'field_discipline',
-        10 => 'field_editorial_summary',
-        11 => 'field_department',
-        12 => 'group_tags_wrapper',
+        1 => 'field_event_date',
+        2 => 'title',
+        3 => 'field_address',
+        4 => 'field_editorial_summary',
+        5 => 'group_tags_wrapper',
+        6 => 'field_industry',
+        7 => 'field_region',
+        8 => 'field_company_organization',
+        9 => 'field_tag',
+        10 => 'field_business_insight_topic',
+        11 => 'field_discipline',
+        12 => 'field_department',
         13 => 'field_event_series',
         14 => 'field_target_audience',
         15 => 'field_event_category',
@@ -410,18 +415,18 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
+      'field_event_date' => 'ds_content',
+      'title' => 'ds_content',
+      'field_address' => 'ds_content',
+      'field_editorial_summary' => 'ds_content',
+      'group_tags_wrapper' => 'ds_content',
       'field_industry' => 'ds_content',
       'field_region' => 'ds_content',
       'field_company_organization' => 'ds_content',
-      'field_event_date' => 'ds_content',
       'field_tag' => 'ds_content',
-      'title' => 'ds_content',
       'field_business_insight_topic' => 'ds_content',
-      'field_address' => 'ds_content',
       'field_discipline' => 'ds_content',
-      'field_editorial_summary' => 'ds_content',
       'field_department' => 'ds_content',
-      'group_tags_wrapper' => 'ds_content',
       'field_event_series' => 'ds_content',
       'field_target_audience' => 'ds_content',
       'field_event_category' => 'ds_content',

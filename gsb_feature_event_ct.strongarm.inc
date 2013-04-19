@@ -123,7 +123,7 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '0',
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),

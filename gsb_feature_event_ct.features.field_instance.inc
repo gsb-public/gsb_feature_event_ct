@@ -540,16 +540,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'addressfield',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'format_handlers' => array(
-            'address' => 'address',
-            'address-hide-country' => 'address-hide-country',
-          ),
-          'use_widget_handlers' => 0,
         ),
-        'type' => 'addressfield_default',
+        'type' => 'gsb_field_formatter_address_city_state',
         'weight' => 3,
       ),
       'tiny' => array(

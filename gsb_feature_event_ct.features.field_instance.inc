@@ -509,15 +509,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'addressfield',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
         ),
-        'type' => 'addressfield_default',
+        'type' => 'gsb_field_formatter_address_no_country',
         'weight' => 3,
       ),
       'featured' => array(

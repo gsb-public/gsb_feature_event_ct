@@ -120,7 +120,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'field_image_single_public' => array(
+    'field_event_date' => array(
       'formatter_settings' => array(
         'ft' => array(),
       ),
@@ -203,6 +203,11 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         'class' => '',
         'ft' => array(),
         'conditions' => array(),
+      ),
+    ),
+    'field_event_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
   );

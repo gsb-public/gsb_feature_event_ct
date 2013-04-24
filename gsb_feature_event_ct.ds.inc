@@ -124,7 +124,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(),
       ),
-    ),
+    ),    
     'field_link_map' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -308,15 +308,16 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'footer' => array(
         10 => 'field_body',
         11 => 'group_tags_wrapper',
-        12 => 'field_discipline',
-        13 => 'field_event_series',
-        14 => 'field_event_category',
-        15 => 'field_business_insight_topic',
-        16 => 'field_industry',
-        17 => 'field_company_organization',
-        18 => 'field_tag',
-        19 => 'field_region',
-        20 => 'field_department',
+        12 => 'field_addthis',
+        13 => 'field_discipline',
+        14 => 'field_event_series',
+        15 => 'field_event_category',
+        16 => 'field_business_insight_topic',
+        17 => 'field_industry',
+        18 => 'field_company_organization',
+        19 => 'field_tag',
+        20 => 'field_region',
+        21 => 'field_department',
       ),
     ),
     'fields' => array(
@@ -332,6 +333,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_target_audience' => 'right',
       'field_body' => 'footer',
       'group_tags_wrapper' => 'footer',
+      'field_addthis' => 'footer',
       'field_discipline' => 'footer',
       'field_event_series' => 'footer',
       'field_event_category' => 'footer',

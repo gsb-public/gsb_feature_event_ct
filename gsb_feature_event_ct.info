@@ -5,6 +5,8 @@ php = 5.2.4
 version = 7.x-1.0
 project = gsb_feature_event_ct
 dependencies[] = addressfield
+dependencies[] = addthis
+dependencies[] = addthis_displays
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_all_day
@@ -32,7 +34,7 @@ dependencies[] = panopoly_core
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-datestamp = 1366396214
+datestamp = 1366774016
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
@@ -67,6 +69,7 @@ features[field_instance][] = field_collection_item-field_person_other-field_last
 features[field_instance][] = field_collection_item-field_person_other-field_person_or_other
 features[field_instance][] = field_collection_item-field_person_other-field_person_ref
 features[field_instance][] = node-event-field_address
+features[field_instance][] = node-event-field_addthis
 features[field_instance][] = node-event-field_body
 features[field_instance][] = node-event-field_business_insight_topic
 features[field_instance][] = node-event-field_company_organization
@@ -104,10 +107,5 @@ features_exclude[taxonomy][target_audience] = target_audience
 features_exclude[taxonomy][discipline] = discipline
 features_exclude[taxonomy][tag] = tag
 features_exclude[taxonomy][department] = department
-
-
-; Information added by drush on 2013-04-19
-version = "master-dev"
-project = "gsb_feature_event_ct"
-datestamp = "1366396214"
+features_exclude[field][node-event-field_addthis] = node-event-field_addthis
 

@@ -93,6 +93,9 @@ function gsb_feature_event_ct_strongarm() {
       'people_fpp' => array(
         'custom_settings' => FALSE,
       ),
+      'event_listing' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -124,6 +127,10 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'teaser' => array(
             'weight' => '13',
+            'visible' => FALSE,
+          ),
+          'event_listing' => array(
+            'weight' => '14',
             'visible' => FALSE,
           ),
         ),

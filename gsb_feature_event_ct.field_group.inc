@@ -159,7 +159,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '10',
+    'weight' => '9',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',

@@ -585,19 +585,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'addthis_displays',
-        'settings' => array(
-          'buttons_size' => 'addthis_16x16_style',
-          'conditions' => array(
-            0 => array(
-              'condition' => '',
-            ),
-          ),
-          'counter_orientation' => 'horizontal',
-          'extra_css' => '',
-          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
-        ),
-        'type' => 'addthis_basic_toolbox',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 10,
       ),
       'ical' => array(
@@ -1838,7 +1827,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 17,
       ),
       'ical' => array(
         'label' => 'above',

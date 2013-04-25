@@ -1350,13 +1350,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
-          'image_style' => '270x158',
+          'file_view_mode' => 'teaser',
         ),
-        'type' => 'image',
+        'type' => 'file_rendered',
         'weight' => 6,
       ),
       'featured' => array(

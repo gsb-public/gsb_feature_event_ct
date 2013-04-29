@@ -2042,7 +2042,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'field_event_category' => 'field_event_category',
         'field_event_date' => 0,
         'field_event_series' => 'field_event_series',
-        'field_image_single_public' => 'field_image_single_public',
+        'field_image_single_public' => 0,
         'field_industry' => 'field_industry',
         'field_link_map' => 0,
         'field_person_fac_other' => 'field_person_fac_other',

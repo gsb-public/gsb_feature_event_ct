@@ -96,6 +96,12 @@ function gsb_feature_event_ct_strongarm() {
       'event_listing' => array(
         'custom_settings' => TRUE,
       ),
+      'event_upcoming' => array(
+        'custom_settings' => TRUE,
+      ),
+      'media_contact' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -131,6 +137,10 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'event_listing' => array(
             'weight' => '14',
+            'visible' => FALSE,
+          ),
+          'event_upcoming' => array(
+            'weight' => '19',
             'visible' => FALSE,
           ),
         ),

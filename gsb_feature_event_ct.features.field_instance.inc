@@ -2112,8 +2112,9 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'module' => 'concat_field',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'concat_field_blank',
         'weight' => 17,
       ),
       'event_listing' => array(
@@ -2153,7 +2154,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Search field',
     'required' => 0,
     'settings' => array(
-      'gsb_feature_base_fields_selected_fields' => array(
+      'selected_fields' => array(
         'field_address' => 'field_address',
         'field_addthis' => 0,
         'field_body' => 'field_body',
@@ -2178,11 +2179,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'computed_field',
+      'module' => 'concat_field',
       'settings' => array(
         'maxlength_js_label' => '',
       ),
-      'type' => 'computed',
+      'type' => 'concat_field_default',
       'weight' => 32,
     ),
     'workbench_access_field' => 0,

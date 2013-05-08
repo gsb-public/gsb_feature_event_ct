@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Concat Field module.
+ */
+
+/**
+ * Convert computed field to concat field for field_search_field.
+ */
+function gsb_feature_event_ct_update_7000() {
+  // Enable the concat_field module.
+  module_enable(array('concat_field'));
+
+  // Convert field base.
+  $result = db_select('field_config', 'fc')
+    ->fields('fc', array('data'))
+    ->condition('field_name', 'field_search_field')
+    ->execute()
+    ->fetchCol();
+  $data = unserialize($result[0]);
+  $data['settings'] = array();
+
+  db_update('field_config')
+    ->fields(array(
+      'type' => 'concat_field',
+      'module' => 'concat_field',
+      'data' => serialize($data),
+    ))
+    ->condition('field_name', 'field_search_field')
+    ->execute();
+
+  // Convert field instance.
+  $result = db_select('field_config_instance', 'fci')
+    ->fields('fci', array('data'))
+    ->condition('field_name', 'field_search_field')
+    ->execute()
+    ->fetchCol();
+  $data = unserialize($result[0]);
+
+  $data['display']['default']['module'] = 'concat_field';
+  $data['display']['default']['type'] = 'concat_field_blank';
+  $data['settings']['selected_fields'] = $data['settings']['gsb_feature_base_fields_selected_fields'];
+  unset($data['settings']['gsb_feature_base_fields_selected_fields']);
+  $data['widget']['module'] = 'concat_field';
+  $data['widget']['type'] = 'concat_field_default';
+
+  db_update('field_config_instance')
+    ->fields(array(
+      'data' => serialize($data),
+    ))
+    ->condition('field_name', 'field_search_field')
+    ->execute();
+}

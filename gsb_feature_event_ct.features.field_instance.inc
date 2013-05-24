@@ -1533,7 +1533,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   $field_instances['node-event-field_image_single_public'] = array(
     'bundle' => 'event',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1603,6 +1603,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
     'label' => 'Event Image',
@@ -1645,6 +1646,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 0,
+          'youtube' => 0,
         ),
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'progress_indicator' => 'throbber',
@@ -2113,7 +2115,9 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'concat_field',
-        'settings' => array(),
+        'settings' => array(
+          'conditions' => array(),
+        ),
         'type' => 'concat_field_blank',
         'weight' => 17,
       ),
@@ -2391,6 +2395,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('First Name');
   t('Industry');
   t('Last Name');
+  t('Recommended size for uploaded images is 600x440.');
   t('Region');
   t('Register URL');
   t('Search field');

@@ -124,7 +124,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(),
       ),
-    ),        
+    ),
     'field_link_map' => array(
       'formatter_settings' => array(
         'ft' => array(

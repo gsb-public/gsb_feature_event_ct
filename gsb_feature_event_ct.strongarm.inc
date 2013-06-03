@@ -58,7 +58,7 @@ function gsb_feature_event_ct_strongarm() {
         'custom_settings' => TRUE,
       ),
       'featured' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
@@ -142,6 +142,10 @@ function gsb_feature_event_ct_strongarm() {
           'event_upcoming' => array(
             'weight' => '19',
             'visible' => FALSE,
+          ),
+          'featured' => array(
+            'weight' => '7',
+            'visible' => TRUE,
           ),
         ),
       ),

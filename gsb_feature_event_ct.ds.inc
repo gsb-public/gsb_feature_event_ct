@@ -120,6 +120,11 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
+    'links' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'field_event_date' => array(
       'formatter_settings' => array(
         'ft' => array(),
@@ -318,6 +323,9 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
   $ds_layout->layout = 'ds_2col_stacked';
   $ds_layout->settings = array(
     'regions' => array(
+      'header' => array(
+        0 => 'links',
+      ),
       'left' => array(
         0 => 'field_event_date',
         1 => 'title',
@@ -347,6 +355,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
+      'links' => 'header',
       'field_event_date' => 'left',
       'title' => 'left',
       'field_person_fac_other' => 'left',

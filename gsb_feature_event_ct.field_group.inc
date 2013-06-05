@@ -226,6 +226,41 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags_wrapper|node|event|featured';
+  $field_group->group_name = 'group_tags_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'featured';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+      1 => 'field_company_organization',
+      2 => 'field_department',
+      3 => 'field_discipline',
+      4 => 'field_event_category',
+      5 => 'field_event_series',
+      6 => 'field_industry',
+      7 => 'field_region',
+      8 => 'field_tag',
+      9 => 'field_target_audience',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_tags_wrapper|node|event|featured'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tags_wrapper|node|event|full';
   $field_group->group_name = 'group_tags_wrapper';
   $field_group->entity_type = 'node';

@@ -77,3 +77,45 @@ function gsb_feature_event_ct_hide_date_repeat($element, &$form_state) {
   $element[$element['#language']][0]['show_repeat_settings']['#access'] = FALSE;
   return $element;
 }
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function gsb_feature_event_ct_field_formatter_info() {
+  return array(
+    'gsb_feature_event_ct_date_formatter' => array(
+      'label' => t('Custom date formater'),
+      'field types' => array('date', 'datestamp', 'datetime'),
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view(). This code just passes straight
+ */
+function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $elements = array();
+  foreach ($items as $delta => $item) {
+    $db_format = date_type_format($field['type']);
+    $date = new DateObject($item['value'], $item['timezone_db'], $db_format);
+    $timezone = isset($item['timezone']) ? $item['timezone'] : '';
+    $timezone = timezone_open(date_get_timezone($field['settings']['tz_handling'], $timezone));
+    date_timezone_set($date, $timezone);
+
+    $day = date_format_date($date, 'custom', 'l');
+    $month_day = date_format_date($date, 'custom', 'M j');
+    $time = date_format_date($date, 'custom', 'ga');
+    if (isset($item['value2'])) {
+      $date2 = new DateObject($item['value2'], $item['timezone_db'], $db_format);
+      date_timezone_set($date2, $timezone);
+      if (date_format_date($date, 'custom', 'Y-m-d') == date_format_date($date2, 'custom', 'Y-m-d')) {
+        $time .= ' - ' . date_format_date($date2, 'custom', 'ga');
+      }
+    }
+    $elements[$delta] = array(
+      '#markup' => '<div class="event_calendar_featured"><ins>' . $day . '</i><b>' . $month_day . '</b><span>' . $time . '</span></div>',
+    );
+  }
+  return $elements;
+}

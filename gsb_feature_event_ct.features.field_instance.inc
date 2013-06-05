@@ -535,10 +535,13 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'gsb_field_formatter_address_city_state',
+        'weight' => 2,
       ),
       'ical' => array(
         'label' => 'above',
@@ -789,10 +792,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 3,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 9,
       ),
       'ical' => array(
         'label' => 'above',
@@ -880,10 +889,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 8,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 7,
       ),
       'ical' => array(
         'label' => 'above',
@@ -974,10 +989,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 9,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 11,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1067,10 +1088,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 22,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 10,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1152,10 +1179,13 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 25,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1251,10 +1281,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 24,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 14,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1356,9 +1392,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'gsb_feature_event_ct',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'gsb_feature_event_ct_date_formatter',
         'weight' => 0,
       ),
       'ical' => array(
@@ -1482,10 +1521,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 23,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 12,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1569,10 +1614,15 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'image_link' => '',
+          'image_style' => '270x158',
+        ),
+        'type' => 'gsb_field_formatter_image',
+        'weight' => 15,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1701,10 +1751,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 5,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1885,13 +1941,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'featured' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'separator' => '; ',
-          'view_mode' => 'full',
-        ),
-        'type' => 'gsb_field_formatter_field_collection_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'ical' => array(
@@ -1971,10 +2022,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 7,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 6,
       ),
       'ical' => array(
         'label' => 'above',
@@ -2255,10 +2312,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 8,
       ),
       'ical' => array(
         'label' => 'above',
@@ -2346,10 +2409,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 18,
       ),
       'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'path_prefix' => 'events/list',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
+        ),
+        'type' => 'gsb_field_formatter_path_term_separator',
+        'weight' => 13,
       ),
       'ical' => array(
         'label' => 'above',

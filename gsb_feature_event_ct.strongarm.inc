@@ -145,7 +145,7 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'featured' => array(
             'weight' => '7',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
         ),
       ),

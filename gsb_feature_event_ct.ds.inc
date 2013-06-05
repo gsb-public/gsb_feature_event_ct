@@ -220,7 +220,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|event|teaser';
+  $ds_fieldsetting->id = 'node|event|teaser|featured';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'event';
   $ds_fieldsetting->view_mode = 'teaser';
@@ -243,7 +243,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       ),
     ),
   );
-  $export['node|event|teaser'] = $ds_fieldsetting;
+  $export['node|event|teaser|featured'] = $ds_fieldsetting;
 
   return $export;
 }

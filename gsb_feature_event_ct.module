@@ -112,7 +112,7 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
       if (date_format_date($date, 'custom', 'Y-m-d') == date_format_date($date2, 'custom', 'Y-m-d')) {
         //same date
         $time .= ' - ' . date_format_date($date2, 'custom', 'ga');
-        $output = '<div class="event_calendar_featured"><ins>' . $day . '</i><b>' . $month_day . '</b><span>' . $time . '</span></div>';
+        $output = '<div class="event_calendar_featured"><ins>' . $day . '</ins><b>' . $month_day . '</b><span>' . $time . '</span></div>';
       }
       else {
         $month_day2 = date_format_date($date2, 'custom', 'M d');
@@ -120,7 +120,7 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
       }
     }
     else {
-      $output = '<div class="event_calendar_featured"><ins>' . $day . '</i><b>' . $month_day . '</b><span>' . $time . '</span></div>';
+      $output = '<div class="event_calendar_featured"><ins>' . $day . '</ins><b>' . $month_day . '</b><span>' . $time . '</span></div>';
     }
     $elements[$delta] = array(
       '#markup' => $output,

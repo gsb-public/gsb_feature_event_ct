@@ -111,7 +111,10 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
       date_timezone_set($date2, $timezone);
       if (date_format_date($date, 'custom', 'Y-m-d') == date_format_date($date2, 'custom', 'Y-m-d')) {
         //same date
-        $time .= ' - ' . date_format_date($date2, 'custom', 'ga');
+        $time2 = date_format_date($date2, 'custom', 'ga');
+        if ($time2 != $time) {
+          $time .= ' - ' . $time2;
+        }
         $output = '<div class="event_calendar_featured"><ins>' . $day . '</ins><b>' . $month_day . '</b><span>' . $time . '</span></div>';
       }
       else {

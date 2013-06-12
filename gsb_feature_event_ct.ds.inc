@@ -218,33 +218,6 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   );
   $export['node|event|megamenu'] = $ds_fieldsetting;
 
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|event|teaser|featured';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'event';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '2',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
-        'ft' => array(),
-        'conditions' => array(),
-      ),
-    ),
-    'field_event_date' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
-  );
-  $export['node|event|teaser|featured'] = $ds_fieldsetting;
-
   return $export;
 }
 
@@ -594,15 +567,6 @@ function gsb_feature_event_ct_ds_view_modes_info() {
     'node' => 'node',
   );
   $export['event_upcoming'] = $ds_view_mode;
-
-  $ds_view_mode = new stdClass();
-  $ds_view_mode->api_version = 1;
-  $ds_view_mode->view_mode = 'featured';
-  $ds_view_mode->label = 'Featured';
-  $ds_view_mode->entities = array(
-    'node' => 'node',
-  );
-  $export['featured'] = $ds_view_mode;
 
   return $export;
 }

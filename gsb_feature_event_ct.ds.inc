@@ -375,8 +375,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'field_event_date',
-        2 => 'title',
+        1 => 'title',
+        2 => 'field_event_date',
         3 => 'field_address',
         4 => 'field_editorial_summary',
         5 => 'group_tags_wrapper',
@@ -394,8 +394,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
-      'field_event_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_event_date' => 'ds_content',
       'field_address' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
       'group_tags_wrapper' => 'ds_content',
@@ -496,8 +496,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'field_event_date',
-        2 => 'title',
+        1 => 'title',
+        2 => 'field_event_date',
         3 => 'field_address',
         4 => 'field_editorial_summary',
         5 => 'group_tags_wrapper',
@@ -515,8 +515,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
-      'field_event_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_event_date' => 'ds_content',
       'field_address' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
       'group_tags_wrapper' => 'ds_content',

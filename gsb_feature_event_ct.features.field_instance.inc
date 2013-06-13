@@ -2188,11 +2188,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'concat_field',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'concat_field_blank',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 17,
       ),
       'event_listing' => array(

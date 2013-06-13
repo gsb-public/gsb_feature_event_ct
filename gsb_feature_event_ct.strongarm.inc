@@ -37,6 +37,11 @@ function gsb_feature_event_ct_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'featured' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),

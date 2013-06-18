@@ -131,7 +131,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'ft-event-wrp',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_address',
       1 => 'field_editorial_summary',

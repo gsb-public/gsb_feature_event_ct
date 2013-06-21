@@ -114,7 +114,7 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'workbench_access' => array(
           'weight' => '0',
@@ -123,7 +123,7 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
       ),
       'display' => array(
@@ -200,7 +200,7 @@ function gsb_feature_event_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_event_pattern';
-  $strongarm->value = 'events/[node:title]';
+  $strongarm->value = 'events/[node:field_pathauto_title_alias]';
   $export['pathauto_node_event_pattern'] = $strongarm;
 
   return $export;

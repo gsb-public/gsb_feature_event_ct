@@ -23,8 +23,7 @@ function gsb_feature_event_ct_field_group_info() {
     'label' => 'Image',
     'weight' => '6',
     'children' => array(
-      0 => 'field_image_caption',
-      1 => 'field_image_single_public',
+      0 => 'field_image_single_public',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -166,7 +165,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Location',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'group_event_image',
       1 => 'group_event_location',
@@ -381,7 +380,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',

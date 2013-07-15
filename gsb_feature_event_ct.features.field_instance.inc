@@ -914,14 +914,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'path_prefix' => 'events/list',
-          'separator' => ', ',
-          'tid_or_name' => 'name',
-        ),
-        'type' => 'gsb_field_formatter_path_term_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 11,
       ),
       'tiny' => array(
@@ -1113,14 +1107,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'path_prefix' => 'events/list',
-          'separator' => ', ',
-          'tid_or_name' => 'name',
-        ),
-        'type' => 'gsb_field_formatter_path_term_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 14,
       ),
       'tiny' => array(
@@ -1546,14 +1534,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'path_prefix' => 'events/list',
-          'separator' => ', ',
-          'tid_or_name' => 'name',
-        ),
-        'type' => 'gsb_field_formatter_path_term_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 17,
       ),
       'tiny' => array(
@@ -1776,14 +1758,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'path_prefix' => 'events/list',
-          'separator' => ', ',
-          'tid_or_name' => 'name',
-        ),
-        'type' => 'gsb_field_formatter_path_term_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 9,
       ),
       'tiny' => array(
@@ -2412,14 +2388,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'path_prefix' => 'events/list',
-          'separator' => ', ',
-          'tid_or_name' => 'name',
-        ),
-        'type' => 'gsb_field_formatter_path_term_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 12,
       ),
       'tiny' => array(
@@ -2509,14 +2479,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'path_prefix' => 'events/list',
-          'separator' => ', ',
-          'tid_or_name' => 'name',
-        ),
-        'type' => 'gsb_field_formatter_path_term_separator',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 18,
       ),
       'tiny' => array(

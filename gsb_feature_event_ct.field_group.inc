@@ -346,15 +346,9 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'field_business_insight_topic',
-      1 => 'field_company_organization',
-      2 => 'field_department',
-      3 => 'field_discipline',
-      4 => 'field_event_category',
-      5 => 'field_event_series',
-      6 => 'field_industry',
-      7 => 'field_region',
-      8 => 'field_tag',
-      9 => 'field_target_audience',
+      1 => 'field_department',
+      2 => 'field_event_category',
+      3 => 'field_region',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(

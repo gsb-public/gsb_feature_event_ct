@@ -131,3 +131,17 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
   }
   return $elements;
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
+  if (isset($form['#entity_type']) &&  $form['#entity_type'] == 'node') {
+    $node = $form['#node'];
+    if ($node->type == "event") { 
+      $form['field_industry']['#access'] = FALSE;
+      $form['field_discipline']['#access'] = FALSE; 
+    }
+  }  
+}
+

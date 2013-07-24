@@ -514,7 +514,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_address_no_country',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'event_listing' => array(
         'label' => 'hidden',
@@ -608,7 +608,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 15,
       ),
       'event_listing' => array(
         'label' => 'above',
@@ -681,7 +681,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'event_listing' => array(
         'label' => 'above',
@@ -1359,7 +1359,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'event_listing' => array(
         'label' => 'hidden',
@@ -1824,7 +1824,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'event_listing' => array(
         'label' => 'above',
@@ -1909,6 +1909,81 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-event-field_pathauto_title_alias'
+  $field_instances['node-event-field_pathauto_title_alias'] = array(
+    'bundle' => 'event',
+    'default_value' => array(
+      0 => array(
+        'use_autogenerate' => 1,
+        'alias' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
+      'event_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'event_upcoming' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'megamenu' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pathauto_title_alias',
+    'label' => 'URL Alias',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'pathauto_title_alias',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'pathauto_title_alias_form',
+      'weight' => 2,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-event-field_person_fac_other'
   $field_instances['node-event-field_person_fac_other'] = array(
     'bundle' => 'event',
@@ -1925,7 +2000,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_field_collection_separator',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'event_listing' => array(
         'label' => 'above',
@@ -2385,7 +2460,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'event_listing' => array(
         'label' => 'hidden',
@@ -2494,6 +2569,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Speakers');
   t('Tag');
   t('Target Audience');
+  t('URL Alias');
   t('View Map');
 
   return $field_instances;

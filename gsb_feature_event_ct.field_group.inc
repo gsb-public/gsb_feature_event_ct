@@ -230,7 +230,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
@@ -417,7 +417,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Button wrapper',
-    'weight' => '5',
+    'weight' => '7',
     'children' => array(
       0 => 'field_register_url',
       1 => 'gsb_feature_event_display_ical',

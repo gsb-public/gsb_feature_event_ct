@@ -116,7 +116,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -329,13 +329,13 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         3 => 'field_person_fac_other',
         4 => 'field_address',
         5 => 'field_link_map',
-        6 => 'group_wrapper_buttons',
-        7 => 'field_register_url',
-        10 => 'gsb_feature_event_display_ical',
       ),
       'right' => array(
-        8 => 'field_image_single_public',
-        9 => 'field_target_audience',
+        6 => 'field_image_single_public',
+        7 => 'field_register_url',
+        8 => 'group_wrapper_buttons',
+        9 => 'gsb_feature_event_display_ical',
+        10 => 'field_target_audience',
       ),
       'footer' => array(
         11 => 'field_body',
@@ -358,11 +358,11 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_person_fac_other' => 'left',
       'field_address' => 'left',
       'field_link_map' => 'left',
-      'group_wrapper_buttons' => 'left',
-      'field_register_url' => 'left',
       'field_image_single_public' => 'right',
+      'field_register_url' => 'right',
+      'group_wrapper_buttons' => 'right',
+      'gsb_feature_event_display_ical' => 'right',
       'field_target_audience' => 'right',
-      'gsb_feature_event_display_ical' => 'left',
       'field_body' => 'footer',
       'group_tags_wrapper' => 'footer',
       'field_discipline' => 'footer',

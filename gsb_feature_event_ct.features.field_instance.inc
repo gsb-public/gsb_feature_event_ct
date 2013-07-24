@@ -2165,11 +2165,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'event_listing' => array(

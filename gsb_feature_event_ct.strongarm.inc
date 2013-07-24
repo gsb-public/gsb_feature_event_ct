@@ -114,7 +114,7 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'workbench_access' => array(
           'weight' => '0',
@@ -123,14 +123,17 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '10',
+        ),
+        'redirect' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(
         'gsb_feature_event_display_ical' => array(
           'default' => array(
             'weight' => '7',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'megamenu' => array(
             'weight' => '7',

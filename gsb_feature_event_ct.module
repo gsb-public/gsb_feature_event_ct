@@ -26,7 +26,7 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
   $language = $form['language']['#value'];
 
-  // Hide date repeat for now.  Need to figure out how to show the correct date 
+  // Hide date repeat for now.  Need to figure out how to show the correct date
   // in views before enabling.
   $form['field_event_date']['#after_build'][] = 'gsb_feature_event_ct_hide_date_repeat';
 
@@ -138,10 +138,16 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
 function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
   if (isset($form['#entity_type']) &&  $form['#entity_type'] == 'node') {
     $node = $form['#node'];
-    if ($node->type == "event") { 
+    if ($node->type == "event") {
       $form['field_industry']['#access'] = FALSE;
-      $form['field_discipline']['#access'] = FALSE; 
-    }
-  }  
-}
+      $form['field_discipline']['#access'] = FALSE;
 
+      // Exclude Academic Calendars tid for authors editing Event content type.
+      // This workaround will work only for one term.
+      if (defined('GSB_FEATURE_ACADEMIC_CALENDAR')) {
+        $langcode = $form['field_event_category']['#language'];
+        $form['field_event_category'][$langcode]['#config']['params']['exclude_tid'] = GSB_FEATURE_ACADEMIC_CALENDAR;
+      }
+    }
+  }
+}

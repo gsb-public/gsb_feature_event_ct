@@ -1572,9 +1572,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hs_taxonomy',
-      'settings' => array(),
-      'type' => 'taxonomy_hs',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
       'weight' => 24,
     ),
     'workbench_access_field' => 0,

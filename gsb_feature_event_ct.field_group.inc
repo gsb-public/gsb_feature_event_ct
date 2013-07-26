@@ -419,7 +419,6 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '7',
     'children' => array(
       0 => 'field_register_url',
-      1 => 'gsb_feature_event_display_ical',
     ),
     'format_type' => 'div',
     'format_settings' => array(

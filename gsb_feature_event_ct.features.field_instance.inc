@@ -2168,11 +2168,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
+        'module' => 'link',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'gsb_field_formatter_node_title_link',
+        'type' => 'link_default',
         'weight' => 6,
       ),
       'event_listing' => array(

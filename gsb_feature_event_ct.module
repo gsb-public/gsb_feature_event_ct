@@ -67,6 +67,13 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
     }
   }
+
+  // We are removing the 'Academic Calendar' term from the list of 'Event Category' terms
+  if (isset($form['field_event_category'])) {
+    $term = taxonomy_get_term_by_name('Academic Calendar', 'event_category');
+    $form['field_event_category'][$language]['#config']['params']['exclude_tid'] = key($term);
+  } 
+  
 }
 
 /**

@@ -32,7 +32,6 @@ dependencies[] = link
 dependencies[] = list
 dependencies[] = media
 dependencies[] = options
-dependencies[] = panopoly_core
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text

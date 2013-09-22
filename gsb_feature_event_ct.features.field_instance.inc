@@ -1366,7 +1366,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'time_only',
+          'format_type' => 'medium_time',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',

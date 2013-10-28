@@ -52,3 +52,16 @@ function gsb_feature_event_ct_update_7000() {
     ->condition('field_name', 'field_search_field')
     ->execute();
 }
+
+/**
+ * Update the target audience taxonomy terms.
+ */
+function gsb_feature_event_ct_update_7001() {
+  // Delete the 'All' term.
+  taxonomy_term_delete(12221);
+
+  // Rename the 'Public' term to 'General Public'.
+  $term = taxonomy_term_load(12236);
+  $term->name = 'General Public';
+  taxonomy_term_save($term);
+}

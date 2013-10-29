@@ -354,6 +354,7 @@ function gsb_feature_event_ct_field_group_info() {
       'instance_settings' => array(
         'classes' => '',
         'show_label' => '1',
+        'item_count' => '5',
         'label_element' => 'h3',
       ),
       'formatter' => 'open',

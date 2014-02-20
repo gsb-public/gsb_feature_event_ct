@@ -380,6 +380,7 @@ function gsb_feature_event_ct_field_group_info() {
       7 => 'field_region',
       8 => 'field_tag',
       9 => 'field_target_audience',
+      10 => 'field_academic_area_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

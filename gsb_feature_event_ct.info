@@ -78,6 +78,7 @@ features[field_instance][] = field_collection_item-field_person_other-field_firs
 features[field_instance][] = field_collection_item-field_person_other-field_last_name
 features[field_instance][] = field_collection_item-field_person_other-field_person_or_other
 features[field_instance][] = field_collection_item-field_person_other-field_person_ref
+features[field_instance][] = node-event-field_academic_area_unlimited
 features[field_instance][] = node-event-field_address
 features[field_instance][] = node-event-field_addthis
 features[field_instance][] = node-event-field_body

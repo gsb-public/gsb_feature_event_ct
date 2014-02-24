@@ -379,12 +379,11 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
   $ds_layout->view_mode = 'event_listing';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'title',
+      'left' => array(
+        0 => 'title',
         2 => 'field_event_date',
         3 => 'field_address',
         4 => 'field_editorial_summary',
@@ -395,27 +394,33 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         9 => 'field_tag',
         10 => 'field_event_series',
       ),
+      'right' => array(
+        1 => 'field_image_single_public',
+      ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'ds_content',
-      'title' => 'ds_content',
-      'field_event_date' => 'ds_content',
-      'field_address' => 'ds_content',
-      'field_editorial_summary' => 'ds_content',
-      'group_tags_wrapper' => 'ds_content',
-      'field_event_category' => 'ds_content',
-      'field_business_insight_topic' => 'ds_content',
-      'field_region' => 'ds_content',
-      'field_tag' => 'ds_content',
-      'field_event_series' => 'ds_content',
+      'title' => 'left',
+      'field_image_single_public' => 'right',
+      'field_event_date' => 'left',
+      'field_address' => 'left',
+      'field_editorial_summary' => 'left',
+      'group_tags_wrapper' => 'left',
+      'field_event_category' => 'left',
+      'field_business_insight_topic' => 'left',
+      'field_region' => 'left',
+      'field_tag' => 'left',
+      'field_event_series' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|event|event_listing'] = $ds_layout;
 

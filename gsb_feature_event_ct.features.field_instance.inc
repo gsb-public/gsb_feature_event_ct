@@ -845,7 +845,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 7,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -942,7 +942,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -1494,7 +1494,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -1848,7 +1848,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 2,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -2449,7 +2449,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'pathauto_title_alias_form',
-      'weight' => 2,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -2875,7 +2875,77 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'concat_field_default',
-      'weight' => 32,
+      'weight' => 13,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-event-field_submit'
+  $field_instances['node-event-field_submit'] = array(
+    'bundle' => 'event',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => NULL,
+        'settings' => array(),
+        'type' => 'submit_field_default',
+        'weight' => 22,
+      ),
+      'event_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'event_upcoming' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'megamenu' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_submit',
+    'label' => 'Submit',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'submit_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'submit_field',
+      'weight' => 0,
     ),
     'workbench_access_field' => 0,
   );
@@ -3138,6 +3208,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Speaker');
   t('Speaker Reference');
   t('Speakers');
+  t('Submit');
   t('Tag');
   t('Target Audience');
   t('URL Alias');

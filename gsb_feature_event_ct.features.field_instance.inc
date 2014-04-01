@@ -1073,7 +1073,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
-    'label' => 'Business Insight Topic',
+    'label' => 'Additional Topics',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1163,7 +1163,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_company_organization',
-    'label' => 'Company Organization',
+    'label' => 'Company or Organization',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -2665,7 +2665,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_region',
-    'label' => 'Region',
+    'label' => 'Region of Interest',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3076,7 +3076,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tag',
-    'label' => 'Tag',
+    'label' => 'Keywords',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3189,8 +3189,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('AddThis');
   t('Address');
   t('Body');
-  t('Business Insight Topic');
-  t('Company Organization');
+  t('Additional Topics');
+  t('Company or Organization');
   t('Department');
   t('Discipline');
   t('Editorial Summary');
@@ -3202,14 +3202,14 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Industry');
   t('Last Name');
   t('Recommended size for uploaded images is 600x440.');
-  t('Region');
+  t('Region of Interest');
   t('Register URL');
   t('Search field');
   t('Speaker');
   t('Speaker Reference');
   t('Speakers');
   t('Submit');
-  t('Tag');
+  t('Keywords');
   t('Target Audience');
   t('URL Alias');
   t('View Map');

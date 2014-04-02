@@ -367,7 +367,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Taxonomy',
+    'label' => 'Tagging',
     'weight' => '8',
     'children' => array(
       0 => 'field_business_insight_topic',
@@ -384,12 +384,13 @@ function gsb_feature_event_ct_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Tagging',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'collapsible',
     ),
   );
   $export['group_taxonomy|node|event|form'] = $field_group;

@@ -61,6 +61,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'First Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -133,6 +135,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Last Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -196,6 +200,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Speaker Reference',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -267,6 +273,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'status' => TRUE,
         ),
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -334,6 +342,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'First Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -405,6 +415,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Last Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -468,6 +480,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Speaker Reference',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -533,6 +547,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Speaker',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -609,6 +625,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Academic Area',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -759,6 +777,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Address',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -836,6 +856,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'AddThis',
     'required' => FALSE,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -924,6 +946,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Body',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1076,6 +1100,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Additional Topics',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1083,7 +1109,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 31,
+      'weight' => 33,
     ),
     'workbench_access_field' => 0,
   );
@@ -1166,6 +1192,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Company or Organization',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1176,7 +1204,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 40,
+      'weight' => 37,
     ),
     'workbench_access_field' => 0,
   );
@@ -1259,6 +1287,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Department',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1268,7 +1298,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 35,
+      'weight' => 40,
     ),
     'workbench_access_field' => 0,
   );
@@ -1351,6 +1381,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Discipline',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1358,7 +1390,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 36,
+      'weight' => 41,
     ),
     'workbench_access_field' => 0,
   );
@@ -1476,6 +1508,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Editorial Summary',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1628,6 +1662,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Event Category',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1635,7 +1671,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 33,
+      'weight' => 38,
     ),
     'workbench_access_field' => 0,
   );
@@ -1827,6 +1863,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Event Date',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -1982,6 +2020,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Event Series',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1992,7 +2032,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 34,
+      'weight' => 39,
     ),
     'workbench_access_field' => 0,
   );
@@ -2133,6 +2173,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
@@ -2258,6 +2300,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Industry',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2265,7 +2309,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 37,
+      'weight' => 36,
     ),
     'workbench_access_field' => 0,
   );
@@ -2345,6 +2389,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'View Map',
     'required' => 0,
     'settings' => array(
+      0 => 'title_label_use_field_label',
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2352,6 +2397,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'target' => 'user',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -2440,6 +2487,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'URL Alias',
     'required' => FALSE,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2525,6 +2574,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Speakers',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2668,6 +2719,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Region of Interest',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2675,7 +2728,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 39,
+      'weight' => 34,
     ),
     'workbench_access_field' => 0,
   );
@@ -2755,6 +2808,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Register URL',
     'required' => 0,
     'settings' => array(
+      0 => 'title_label_use_field_label',
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2762,6 +2816,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'target' => 'user',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -2844,6 +2900,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Search field',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'selected_fields' => array(
         'concat_field_entity_label' => 'concat_field_entity_label',
         'field_address' => 'field_address',
@@ -2936,6 +2994,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Submit',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3079,6 +3139,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Keywords',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3089,7 +3151,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 41,
+      'weight' => 35,
     ),
     'workbench_access_field' => 0,
   );
@@ -3168,6 +3230,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'label' => 'Target Audience',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3178,7 +3242,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 38,
+      'weight' => 42,
     ),
     'workbench_access_field' => 0,
   );
@@ -3187,9 +3251,9 @@ function gsb_feature_event_ct_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Academic Area');
   t('AddThis');
+  t('Additional Topics');
   t('Address');
   t('Body');
-  t('Additional Topics');
   t('Company or Organization');
   t('Department');
   t('Discipline');
@@ -3200,6 +3264,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Event Series');
   t('First Name');
   t('Industry');
+  t('Keywords');
   t('Last Name');
   t('Recommended size for uploaded images is 600x440.');
   t('Region of Interest');
@@ -3209,7 +3274,6 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Speaker Reference');
   t('Speakers');
   t('Submit');
-  t('Keywords');
   t('Target Audience');
   t('URL Alias');
   t('View Map');

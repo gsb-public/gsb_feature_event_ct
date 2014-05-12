@@ -112,13 +112,13 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
 
     $day = date_format_date($date, 'custom', 'l');
     $month_day = date_format_date($date, 'custom', 'M d');
-    $time = date_format_date($date, 'custom', 'ga');
+    $time = date_format_date($date, 'custom', 'i') !== '00' ? date_format_date($date, 'custom', 'g:ia') : date_format_date($date, 'custom', 'ga');
     if (isset($item['value2'])) {
       $date2 = new DateObject($item['value2'], $item['timezone_db'], $db_format);
       date_timezone_set($date2, $timezone);
       if (date_format_date($date, 'custom', 'Y-m-d') == date_format_date($date2, 'custom', 'Y-m-d')) {
         //same date
-        $time2 = date_format_date($date2, 'custom', 'ga');
+        $time2 = date_format_date($date2, 'custom', 'i') !== '00' ? date_format_date($date2, 'custom', 'g:ia') : date_format_date($date2, 'custom', 'ga');
         if ($time2 != $time) {
           $time .= ' - ' . $time2;
         }

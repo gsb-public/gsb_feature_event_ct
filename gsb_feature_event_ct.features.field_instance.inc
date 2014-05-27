@@ -586,7 +586,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 14,
       ),
       'event_upcoming' => array(
         'label' => 'above',
@@ -694,7 +694,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'custom_ucfirst' => '',
         ),
         'type' => 'gsb_field_formatter_address_city_state',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -817,7 +817,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 17,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -902,7 +902,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 20,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -1148,7 +1148,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -1243,7 +1243,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -1337,7 +1337,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -1425,7 +1425,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'custom_ucfirst' => '',
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -1730,7 +1730,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2082,7 +2082,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'image_style' => '270x158',
         ),
         'type' => 'gsb_field_formatter_image',
-        'weight' => 0,
+        'weight' => 5,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2256,7 +2256,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 15,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2344,7 +2344,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 21,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2408,6 +2408,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'insert_plugin' => '',
       ),
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -2448,7 +2449,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'event_upcoming' => array(
         'label' => 'above',
@@ -2535,7 +2536,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 18,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2763,7 +2764,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 22,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2827,6 +2828,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'insert_plugin' => '',
       ),
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Register',
       'url' => 0,
@@ -2861,7 +2863,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 16,
       ),
       'event_upcoming' => array(
         'label' => 'hidden',
@@ -2955,7 +2957,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
       'event_upcoming' => array(
         'label' => 'above',
@@ -3186,7 +3188,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'event_upcoming' => array(
         'label' => 'inline',

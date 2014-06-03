@@ -120,7 +120,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
-        'link' => '1',
+        'link' => '0',
         'wrapper' => 'h2',
         'class' => '',
         'ft' => array(),
@@ -487,6 +487,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|event|default'] = $ds_layout;
 

@@ -1,7 +1,7 @@
 name = GSB Feature Event Content Type
 core = 7.x
 package = GSB
-version = 7.x-3.3
+version = 7.x-3.8
 project = gsb_feature_event_ct
 dependencies[] = addressfield
 dependencies[] = addthis
@@ -35,7 +35,7 @@ dependencies[] = strongarm
 dependencies[] = submit_field
 dependencies[] = taxonomy
 dependencies[] = text
-datestamp = 1379969862
+datestamp = 1403218323
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1

@@ -119,6 +119,9 @@ function gsb_feature_event_ct_strongarm() {
       'idea_story_related' => array(
         'custom_settings' => TRUE,
       ),
+      'insight_featured_card' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -169,6 +172,10 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'idea_story_related' => array(
             'weight' => '7',
+            'visible' => FALSE,
+          ),
+          'insight_featured_card' => array(
+            'weight' => '24',
             'visible' => FALSE,
           ),
         ),

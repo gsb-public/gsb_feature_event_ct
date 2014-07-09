@@ -317,6 +317,62 @@ function gsb_feature_event_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|event|insight_featured_card';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'event';
+  $ds_fieldsetting->view_mode = 'insight_featured_card';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
+    'field_event_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['node|event|insight_featured_card'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|event|megamenu';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'event';
@@ -622,6 +678,38 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
   );
   $export['node|event|featured'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|insight_featured_card';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'insight_featured_card';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_image_single_public',
+        1 => 'field_event_date',
+        2 => 'title',
+      ),
+    ),
+    'fields' => array(
+      'field_image_single_public' => 'ds_content',
+      'field_event_date' => 'ds_content',
+      'title' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|event|insight_featured_card'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

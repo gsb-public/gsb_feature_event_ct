@@ -575,11 +575,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 21,
       ),
       'event_listing' => array(
@@ -605,6 +602,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
       ),
       'megamenu' => array(
         'label' => 'above',
@@ -740,6 +743,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -837,6 +846,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
+      ),
       'megamenu' => array(
         'label' => 'above',
         'settings' => array(),
@@ -923,6 +938,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'megamenu' => array(
         'label' => 'hidden',
@@ -1092,6 +1113,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1201,6 +1228,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1296,6 +1329,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1389,6 +1428,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'megamenu' => array(
         'label' => 'hidden',
@@ -1503,6 +1548,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 26,
       ),
       'megamenu' => array(
         'label' => 'hidden',
@@ -1653,6 +1704,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
       'megamenu' => array(
         'label' => 'hidden',
@@ -1830,6 +1887,21 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'multiple_number' => '',
           'multiple_to' => '',
           'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 1,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'conditions' => array(),
+          'format_type' => 'long_time',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -2012,6 +2084,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2148,6 +2226,17 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'image_link' => '',
+          'image_style' => '270x158',
+        ),
+        'type' => 'gsb_field_formatter_image',
         'weight' => 0,
       ),
       'megamenu' => array(
@@ -2309,6 +2398,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2396,6 +2491,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'megamenu' => array(
         'label' => 'hidden',
@@ -2502,6 +2603,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 28,
+      ),
       'megamenu' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2588,6 +2695,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
       ),
       'megamenu' => array(
         'label' => 'above',
@@ -2712,6 +2825,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2817,6 +2936,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2916,6 +3041,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 27,
+      ),
       'megamenu' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2981,9 +3112,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => NULL,
         'settings' => array(),
-        'type' => 'submit_field_default',
+        'type' => 'hidden',
         'weight' => 22,
       ),
       'event_listing' => array(
@@ -3009,6 +3139,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 30,
       ),
       'megamenu' => array(
         'label' => 'above',
@@ -3133,6 +3269,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'insight_featured_card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'megamenu' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -3240,6 +3382,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'megamenu' => array(
         'label' => 'inline',

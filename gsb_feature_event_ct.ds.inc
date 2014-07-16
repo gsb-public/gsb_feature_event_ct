@@ -322,26 +322,6 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'event';
   $ds_fieldsetting->view_mode = 'idea_story_related';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-        'conditions' => array(),
-      ),
-    ),
     'field_address' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -370,9 +350,9 @@ function gsb_feature_event_ct_ds_field_settings_info() {
     ),
   );
   $export['node|event|idea_story_related'] = $ds_fieldsetting;
- 
+
   $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1; 
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|event|insight_featured_card';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'event';
@@ -745,13 +725,11 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_event_date',
-        2 => 'field_address',
+        0 => 'field_event_date',
+        1 => 'field_address',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'field_event_date' => 'ds_content',
       'field_address' => 'ds_content',
     ),
@@ -766,7 +744,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['node|event|idea_story_related'] = $ds_layout;
-  
+
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
   $ds_layout->id = 'node|event|insight_featured_card';

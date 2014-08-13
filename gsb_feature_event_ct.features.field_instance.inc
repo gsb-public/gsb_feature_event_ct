@@ -2854,6 +2854,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_region'
   $field_instances['node-event-field_region'] = array(
     'bundle' => 'event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -2987,9 +2989,10 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_region',
-    'label' => 'Region of Interest',
+    'label' => 'Region',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2999,7 +3002,9 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'hs_taxonomy',
-      'settings' => array(),
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
       'type' => 'taxonomy_hs',
       'weight' => 34,
     ),
@@ -3600,7 +3605,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Keywords');
   t('Last Name');
   t('Recommended size for uploaded images is 600x440.');
-  t('Region of Interest');
+  t('Region');
   t('Register URL');
   t('Search field');
   t('Speaker');

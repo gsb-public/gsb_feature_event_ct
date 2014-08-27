@@ -26,7 +26,7 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
 
   $language = $form['language']['#value'];
 
-  // Hide date repeat for now.  Need to figure out how to show the correct date 
+  // Hide date repeat for now.  Need to figure out how to show the correct date
   // in views before enabling.
   $form['field_event_date']['#after_build'][] = 'gsb_feature_event_ct_hide_date_repeat';
 
@@ -72,8 +72,8 @@ function gsb_feature_event_ct_form_event_node_form_alter(&$form, &$form_state) {
   if (isset($form['field_event_category'])) {
     $term = taxonomy_get_term_by_name('Academic Calendar', 'event_category');
     $form['field_event_category'][$language]['#config']['params']['exclude_tid'] = key($term);
-  } 
-  
+  }
+
 }
 
 /**
@@ -122,15 +122,15 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
         if ($time2 != $time) {
           $time .= ' - ' . $time2;
         }
-        $output = '<div class="event_calendar_featured"><div><ins>' . $day . '</ins><b>' . $month_day . '</b><span>' . $time . '</span></div></div>';
+        $output = '<div class="event-calendar-featured"><div class="day">' . $day . '</div><div class="date"><strong>' . $month_day . '</strong></div><div class="time">' . $time . '</div></div>';
       }
       else {
         $month_day2 = date_format_date($date2, 'custom', 'M d');
-        $output = '<div class="event_calendar_featured from-to"><div><b>' . $month_day . '</b><i>to</i><b>' . $month_day2 . '</b></div></div>';
+        $output = '<div class="event-calendar-featured"><div class="date"><strong>' . $month_day . '</strong></div><span class="to">to</span><div class="date"><strong>' . $month_day2 . '</strong></div></div>';
       }
     }
     else {
-      $output = '<div class="event_calendar_featured"><div><ins>' . $day . '</ins><b>' . $month_day . '</b><span>' . $time . '</span></div></div>';
+      $output = '<div class="event-calendar-featured"><div class="day">' . $day . '</div><div class="date"><strong>' . $month_day . '</strong></div><div class="time">' . $time . '</div></div>';
     }
     $elements[$delta] = array(
       '#markup' => $output,
@@ -145,10 +145,10 @@ function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field
 function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
   if (isset($form['#entity_type']) &&  $form['#entity_type'] == 'node') {
     $node = $form['#node'];
-    if ($node->type == "event") { 
+    if ($node->type == "event") {
       $form['field_industry']['#access'] = FALSE;
-      $form['field_discipline']['#access'] = FALSE; 
+      $form['field_discipline']['#access'] = FALSE;
     }
-  }  
+  }
 }
 

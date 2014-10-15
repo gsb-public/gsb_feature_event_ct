@@ -645,7 +645,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 32,
+      'weight' => 46,
     ),
     'workbench_access_field' => 0,
   );
@@ -1202,7 +1202,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 33,
+      'weight' => 47,
     ),
     'workbench_access_field' => 0,
   );
@@ -1308,7 +1308,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 40,
+      'weight' => 52,
     ),
     'workbench_access_field' => 0,
   );
@@ -1613,7 +1613,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 38,
+      'weight' => 50,
     ),
     'workbench_access_field' => 0,
   );
@@ -2016,7 +2016,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 39,
+      'weight' => 51,
     ),
     'workbench_access_field' => 0,
   );
@@ -2691,7 +2691,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 34,
+      'weight' => 48,
     ),
     'workbench_access_field' => 0,
   );
@@ -3162,7 +3162,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 35,
+      'weight' => 49,
     ),
     'workbench_access_field' => 0,
   );
@@ -3265,7 +3265,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 42,
+      'weight' => 53,
     ),
     'workbench_access_field' => 0,
   );

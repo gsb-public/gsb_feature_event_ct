@@ -13,6 +13,114 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_academic_area|node|event|form';
+  $field_group->group_name = 'group_academic_area';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Academic Area',
+    'weight' => '45',
+    'children' => array(
+      0 => 'field_academic_area_unlimited',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_academic_area|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_additional_topics|node|event|form';
+  $field_group->group_name = 'group_additional_topics';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Additional Topics',
+    'weight' => '46',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_additional_topics|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_department|node|event|form';
+  $field_group->group_name = 'group_department';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Department',
+    'weight' => '51',
+    'children' => array(
+      0 => 'field_department',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_department|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_event_category|node|event|form';
+  $field_group->group_name = 'group_event_category';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Event Category',
+    'weight' => '49',
+    'children' => array(
+      0 => 'field_event_category',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_event_category|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_event_image|node|event|form';
   $field_group->group_name = 'group_event_image';
   $field_group->entity_type = 'node';
@@ -91,6 +199,33 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_event_registration|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_event_series|node|event|form';
+  $field_group->group_name = 'group_event_series';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Event Series',
+    'weight' => '50',
+    'children' => array(
+      0 => 'field_event_series',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_event_series|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -181,6 +316,33 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_location|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_region|node|event|form';
+  $field_group->group_name = 'group_region';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Region',
+    'weight' => '47',
+    'children' => array(
+      0 => 'field_region',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_region|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -360,6 +522,60 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|event|form';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Tags',
+    'weight' => '48',
+    'children' => array(
+      0 => 'field_tag',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_tags|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_target_audience|node|event|form';
+  $field_group->group_name = 'group_target_audience';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Target Audience',
+    'weight' => '52',
+    'children' => array(
+      0 => 'field_target_audience',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_target_audience|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_taxonomy|node|event|form';
   $field_group->group_name = 'group_taxonomy';
   $field_group->entity_type = 'node';
@@ -370,27 +586,21 @@ function gsb_feature_event_ct_field_group_info() {
     'label' => 'Tagging',
     'weight' => '8',
     'children' => array(
-      0 => 'field_business_insight_topic',
-      1 => 'field_company_organization',
-      2 => 'field_department',
-      3 => 'field_discipline',
-      4 => 'field_event_category',
-      5 => 'field_event_series',
-      6 => 'field_industry',
-      7 => 'field_region',
-      8 => 'field_tag',
-      9 => 'field_target_audience',
-      10 => 'field_academic_area_unlimited',
+      0 => 'group_academic_area',
+      1 => 'group_additional_topics',
+      2 => 'group_region',
+      3 => 'group_tags',
+      4 => 'group_event_category',
+      5 => 'group_event_series',
+      6 => 'group_department',
+      7 => 'group_target_audience',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tabs',
     'format_settings' => array(
-      'label' => 'Tagging',
+      'formatter' => '',
       'instance_settings' => array(
-        'required_fields' => 1,
         'classes' => '',
-        'description' => '',
       ),
-      'formatter' => 'collapsible',
     ),
   );
   $export['group_taxonomy|node|event|form'] = $field_group;

@@ -2187,7 +2187,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'image',
       'settings' => array(
         'allowed_schemes' => array(
           'private' => 'private',
@@ -2215,9 +2215,10 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'youtube' => 0,
         ),
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'image_image',
       'weight' => 11,
     ),
     'workbench_access_field' => 0,

@@ -442,6 +442,33 @@ function gsb_feature_event_ct_ds_field_settings_info() {
 }
 
 /**
+ * Implements hook_ds_custom_fields_info().
+ */
+function gsb_feature_event_ct_ds_custom_fields_info() {
+  $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'insights_label_event';
+  $ds_field->label = 'Insights Event label';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = 'event|teaser';
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<h2 class="insights-label event">Event</h2>',
+      'format' => 'full_html',
+    ),
+    'use_token' => 0,
+  );
+  $export['insights_label_event'] = $ds_field;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function gsb_feature_event_ct_ds_layout_settings_info() {
@@ -820,31 +847,21 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'title',
+        0 => 'insights_label_event',
+        1 => 'field_image_single_public',
         2 => 'field_event_date',
-        3 => 'field_address',
-        4 => 'field_editorial_summary',
-        5 => 'group_tags_wrapper',
-        6 => 'field_event_category',
-        7 => 'field_business_insight_topic',
-        8 => 'field_region',
-        9 => 'field_tag',
-        10 => 'field_event_series',
+        3 => 'title',
+        4 => 'field_address',
+        5 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
+      'insights_label_event' => 'ds_content',
       'field_image_single_public' => 'ds_content',
-      'title' => 'ds_content',
       'field_event_date' => 'ds_content',
+      'title' => 'ds_content',
       'field_address' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
-      'group_tags_wrapper' => 'ds_content',
-      'field_event_category' => 'ds_content',
-      'field_business_insight_topic' => 'ds_content',
-      'field_region' => 'ds_content',
-      'field_tag' => 'ds_content',
-      'field_event_series' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

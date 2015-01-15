@@ -110,6 +110,62 @@ function gsb_feature_event_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|event|alumni_featured_content';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'event';
+  $ds_fieldsetting->view_mode = 'alumni_featured_content';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
+    'field_address' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_event_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['node|event|alumni_featured_content'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|event|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'event';
@@ -629,6 +685,38 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|alumni_featured_content';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'alumni_featured_content';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_event_date',
+        1 => 'title',
+        2 => 'field_address',
+      ),
+    ),
+    'fields' => array(
+      'field_event_date' => 'ds_content',
+      'title' => 'ds_content',
+      'field_address' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|event|alumni_featured_content'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|event|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
@@ -655,15 +743,12 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'footer' => array(
         10 => 'field_body',
         11 => 'group_tags_wrapper',
-        12 => 'field_discipline',
-        13 => 'field_event_series',
-        14 => 'field_event_category',
-        15 => 'field_business_insight_topic',
-        16 => 'field_industry',
-        17 => 'field_company_organization',
-        18 => 'field_tag',
-        19 => 'field_region',
-        20 => 'field_department',
+        12 => 'field_event_series',
+        13 => 'field_event_category',
+        14 => 'field_business_insight_topic',
+        15 => 'field_tag',
+        16 => 'field_region',
+        17 => 'field_department',
       ),
     ),
     'fields' => array(
@@ -679,12 +764,9 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_target_audience' => 'right',
       'field_body' => 'footer',
       'group_tags_wrapper' => 'footer',
-      'field_discipline' => 'footer',
       'field_event_series' => 'footer',
       'field_event_category' => 'footer',
       'field_business_insight_topic' => 'footer',
-      'field_industry' => 'footer',
-      'field_company_organization' => 'footer',
       'field_tag' => 'footer',
       'field_region' => 'footer',
       'field_department' => 'footer',

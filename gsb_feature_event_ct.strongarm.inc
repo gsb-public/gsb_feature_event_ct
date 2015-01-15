@@ -122,6 +122,21 @@ function gsb_feature_event_ct_strongarm() {
       'insight_featured_card' => array(
         'custom_settings' => TRUE,
       ),
+      'alumni_featured_content' => array(
+        'custom_settings' => TRUE,
+      ),
+      'alumni_reunion_agenda_list' => array(
+        'custom_settings' => FALSE,
+      ),
+      'idea_story_latest_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'idea_story_top_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'news_listing' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -176,6 +191,10 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'insight_featured_card' => array(
             'weight' => '24',
+            'visible' => FALSE,
+          ),
+          'alumni_featured_content' => array(
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),

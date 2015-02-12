@@ -1633,17 +1633,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'date',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'medium_time',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'hide',
         ),
-        'type' => 'date_default',
+        'type' => 'gsb_field_formatter_split_date_format',
         'weight' => 2,
       ),
       'tiny' => array(

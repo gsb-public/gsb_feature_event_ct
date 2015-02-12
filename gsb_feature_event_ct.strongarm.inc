@@ -42,6 +42,12 @@ function gsb_feature_event_ct_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'existing_node_teaser' => array(
+        'custom_settings' => FALSE,
+      ),
+      'phd_job_market_candidate' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -135,6 +141,15 @@ function gsb_feature_event_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'news_listing' => array(
+        'custom_settings' => FALSE,
+      ),
+      'act_project_by_criteria' => array(
+        'custom_settings' => FALSE,
+      ),
+      'act_project_listing' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_name' => array(
         'custom_settings' => FALSE,
       ),
     ),

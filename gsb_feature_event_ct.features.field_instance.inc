@@ -1469,17 +1469,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'date',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'hide',
         ),
-        'type' => 'date_default',
+        'type' => 'gsb_field_formatter_split_date_format',
         'weight' => 1,
       ),
       'event_listing' => array(
@@ -1934,13 +1928,13 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
+        'module' => 'image',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '270x158',
         ),
-        'type' => 'gsb_field_formatter_image',
+        'type' => 'image',
         'weight' => 1,
       ),
       'tiny' => array(

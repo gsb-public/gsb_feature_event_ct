@@ -152,3 +152,18 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
   }
 }
 
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function gsb_feature_event_ct_field_widget_form_alter(&$element, &$form_state, $context) {
+  if (!isset($element['#bundle']) || $element['#bundle'] != 'event') {
+    return;
+  }
+  if ($element['#field_name'] == 'field_address') {
+    // move 'US' to the top of the options list
+    $us_option = $element['country']['#options']['US'];
+    unset($element['country']['#options']['US']);
+    $element['country']['#options'] = array_merge(array('US' => $us_option), $element['country']['#options']);
+  }
+}
+

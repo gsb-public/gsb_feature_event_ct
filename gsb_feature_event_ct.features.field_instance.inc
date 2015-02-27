@@ -637,7 +637,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'locality' => '',
         'administrative_area' => '',
         'postal_code' => '',
-        'country' => 'US',
+        'country' => '',
       ),
     ),
     'deleted' => 0,

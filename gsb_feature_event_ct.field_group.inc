@@ -167,7 +167,7 @@ function gsb_feature_event_ct_field_group_info() {
       'instance_settings' => array(
         'description' => '',
         'classes' => '',
-        'required_fields' => 1,
+        'required_fields' => 0,
       ),
     ),
   );

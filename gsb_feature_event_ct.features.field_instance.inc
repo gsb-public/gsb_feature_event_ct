@@ -1814,8 +1814,10 @@ function gsb_feature_event_ct_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_image_single_public'
   $field_instances['node-event-field_image_single_public'] = array(
     'bundle' => 'event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Recommended size for uploaded images is 600x440.',
+    'description' => '540 x 316 px',
     'display' => array(
       'alumni_featured_content' => array(
         'label' => 'hidden',
@@ -1956,6 +1958,26 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'replace_existing_files' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -1966,32 +1988,6 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'allowed_schemes' => array(
-          'private' => 'private',
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'gsb_media_browser--files_and_docs' => 0,
-          'gsb_media_browser--images' => 0,
-          'gsb_media_browser--videos' => 0,
-          'gsb_media_center_document' => 0,
-          'gsb_media_center_image' => 'gsb_media_center_image',
-          'gsb_media_center_video' => 0,
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-          'youtube' => 0,
-        ),
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -2085,6 +2081,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       0 => 'title_label_use_field_label',
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2535,6 +2532,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       0 => 'title_label_use_field_label',
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -3012,6 +3010,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('540 x 316 px');
   t('Academic Area');
   t('Additional Topics');
   t('Address');
@@ -3025,7 +3024,6 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('First Name');
   t('Keywords');
   t('Last Name');
-  t('Recommended size for uploaded images is 600x440.');
   t('Region');
   t('Register URL');
   t('Search field');

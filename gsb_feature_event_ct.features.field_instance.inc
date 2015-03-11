@@ -2926,7 +2926,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'taxonomy_term_link' => 0,
-          'taxonomy_term_separator' => ',',
+          'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
         'weight' => 8,

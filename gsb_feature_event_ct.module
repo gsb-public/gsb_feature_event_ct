@@ -221,7 +221,7 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
       $form['field_register_url']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
         array('value' => (string)'1'),
       );
-      $form['field_date']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+      $form['field_date_time']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
         array('value' => (string)'1'),
       );
 

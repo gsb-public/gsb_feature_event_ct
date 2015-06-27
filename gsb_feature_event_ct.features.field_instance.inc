@@ -4382,7 +4382,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'field_address' => 'field_address',
         'field_body' => 'field_body',
         'field_business_insight_topic' => 0,
-        'field_date' => 'field_date',
+        'field_date_time' => 'field_date_time',
         'field_department' => 0,
         'field_editorial_summary' => 'field_editorial_summary',
         'field_email' => 'field_email',

@@ -631,7 +631,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 15,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
@@ -1089,13 +1089,13 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 21,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_date'
-  $field_instances['node-event-field_date'] = array(
+  // Exported field_instance: 'node-event-field_date_time'
+  $field_instances['node-event-field_date_time'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -1121,7 +1121,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 27,
+        'weight' => 37,
       ),
       'event_listing' => array(
         'label' => 'above',
@@ -1174,13 +1174,13 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_date',
+    'field_name' => 'field_date_time',
     'label' => 'Registration Deadline',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
-      'default_value' => 'blank',
+      'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -1191,16 +1191,16 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'display_all_day' => 0,
-        'increment' => 5,
+        'increment' => 15,
         'input_format' => 'M j Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
         'repeat_collapsed' => 0,
         'text_parts' => array(),
-        'year_range' => '-0:+3',
+        'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -1302,7 +1302,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 57,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
@@ -1598,7 +1598,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 25,
+      'weight' => 26,
     ),
     'workbench_access_field' => 0,
   );
@@ -1694,7 +1694,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 18,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -2590,7 +2590,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 20,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -3047,7 +3047,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 17,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -3381,7 +3381,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'pathauto_title_alias_form',
-      'weight' => 26,
+      'weight' => 27,
     ),
     'workbench_access_field' => 0,
   );
@@ -3476,7 +3476,105 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 15,
+      'weight' => 60,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-event-field_person_ref'
+  $field_instances['node-event-field_person_ref'] = array(
+    'bundle' => 'event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'conditions' => array(),
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 36,
+      ),
+      'event_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'event_upcoming' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'megamenu' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_person_ref',
+    'label' => 'Contact Name',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -3628,7 +3726,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 24,
+      'weight' => 25,
     ),
     'workbench_access_field' => 0,
   );
@@ -3780,7 +3878,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -3919,7 +4017,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 13,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -4042,7 +4140,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -4196,7 +4294,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -4321,7 +4419,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'concat_field',
       'settings' => array(),
       'type' => 'concat_field_default',
-      'weight' => 32,
+      'weight' => 33,
     ),
     'workbench_access_field' => 0,
   );
@@ -4547,7 +4645,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 22,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -4767,6 +4865,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   t('Additional Topics');
   t('Address');
   t('Attendance statement');
+  t('Contact Name');
   t('Contact email');
   t('Contact title and department');
   t('Date');

@@ -21,7 +21,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Academic Area',
-    'weight' => '45',
+    'weight' => '13',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -48,10 +48,8 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Additional Topics',
-    'weight' => '46',
-    'children' => array(
-      0 => 'field_business_insight_topic',
-    ),
+    'weight' => '14',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -75,7 +73,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Department',
-    'weight' => '51',
+    'weight' => '19',
     'children' => array(
       0 => 'field_department',
     ),
@@ -102,7 +100,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Event Category',
-    'weight' => '49',
+    'weight' => '17',
     'children' => array(
       0 => 'field_event_category',
     ),
@@ -129,10 +127,8 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
     'label' => 'Image',
-    'weight' => '6',
-    'children' => array(
-      0 => 'field_image_single_public',
-    ),
+    'weight' => '21',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -156,7 +152,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
     'label' => 'Location',
-    'weight' => '7',
+    'weight' => '22',
     'children' => array(
       0 => 'field_address',
       1 => 'field_link_map',
@@ -184,10 +180,8 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
     'label' => 'Registration',
-    'weight' => '8',
-    'children' => array(
-      0 => 'field_register_url',
-    ),
+    'weight' => '23',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -211,7 +205,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Event Series',
-    'weight' => '50',
+    'weight' => '18',
     'children' => array(
       0 => 'field_event_series',
     ),
@@ -238,7 +232,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_location';
   $field_group->data = array(
     'label' => 'Speakers',
-    'weight' => '9',
+    'weight' => '25',
     'children' => array(
       0 => 'field_person_fac_other',
     ),
@@ -300,7 +294,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Location',
-    'weight' => '7',
+    'weight' => '27',
     'children' => array(
       0 => 'group_event_image',
       1 => 'group_event_location',
@@ -328,7 +322,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Region',
-    'weight' => '47',
+    'weight' => '15',
     'children' => array(
       0 => 'field_region',
     ),
@@ -527,10 +521,8 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '48',
-    'children' => array(
-      0 => 'field_tag',
-    ),
+    'weight' => '16',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -554,10 +546,8 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Target Audience',
-    'weight' => '52',
-    'children' => array(
-      0 => 'field_target_audience',
-    ),
+    'weight' => '20',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -581,15 +571,15 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tagging',
-    'weight' => '8',
+    'weight' => '28',
     'children' => array(
       0 => 'group_academic_area',
       1 => 'group_additional_topics',
-      2 => 'group_region',
-      3 => 'group_tags',
-      4 => 'group_event_category',
-      5 => 'group_event_series',
-      6 => 'group_department',
+      2 => 'group_department',
+      3 => 'group_event_category',
+      4 => 'group_event_series',
+      5 => 'group_region',
+      6 => 'group_tags',
       7 => 'group_target_audience',
     ),
     'format_type' => 'tabs',

@@ -156,10 +156,10 @@ function gsb_feature_event_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '29',
         ),
         'workbench_access' => array(
           'weight' => '1',
@@ -168,10 +168,10 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '11',
+          'weight' => '30',
         ),
         'redirect' => array(
-          'weight' => '12',
+          'weight' => '31',
         ),
       ),
       'display' => array(

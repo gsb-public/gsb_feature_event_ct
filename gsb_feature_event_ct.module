@@ -103,6 +103,21 @@ function gsb_feature_event_ct_field_formatter_info() {
  */
 function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
   $elements = array();
+
+  $nid = variable_get('feature_flag_event', 0);
+  $node = node_load($nid);
+
+  $params = array('entity_type' => 'node', 'bundle' => 'event');
+  $inn = field_read_instances($params, array('include_deleted' => TRUE));
+  foreach($inn as $value) {
+    if ($value['field_name'] === 'field_event_date') {
+      $field_id = $value['field_id'];
+      $settings = field_info_field_by_id($field_id);
+      $settings = $settings['settings'];
+      break;
+    }
+  }
+
   foreach ($items as $delta => $item) {
     $db_format = date_type_format($field['type']);
     $date = new DateObject($item['value'], $item['timezone_db'], $db_format);
@@ -146,6 +161,95 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
   if (isset($form['#entity_type']) &&  $form['#entity_type'] == 'node') {
     $node = $form['#node'];
     if ($node->type == "event") {
+
+      /*
+        '#states' => array(
+          'visible' => array(
+            ':input[name="field_event_location[und][0][field_event_location_type][und]"]' => array('value' => 'Classic'),
+          )
+        ),
+      */
+
+      $language = $form['language']['#value'];
+
+
+      $form['field_link_single']['#states'] = array(
+        'invisible' => array(
+          ':input[name="field_event_detail[' . $language . ']"],value="1"' => array('!value' => (string)'1'),
+          ':input[name="field_event_detail[' . $language . ']"],value=""' => array('!value' => (string)''),
+        ),
+        'required' => array(
+          ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'1'),
+        ),
+      );
+
+      $form['field_body']['#states']['required'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'0'),
+      );
+
+
+      $form['field_body']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_event_who_attend']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_event_speakers']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_price']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_link_event_more_info']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_event_attendance_statement']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_schedule']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_event_sponsors']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_email']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_person_title']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_register_url']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+      $form['field_date']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        array('value' => (string)'1'),
+      );
+
+
+/*
+      $form['field_event_location'][$language][0]['field_link_map']['#states'] = array(
+        'invisible' => array(
+          //':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'1'),
+          //':input[name="field_event_location[und][0][field_event_location_type][' . $language . ']"],value="Online"' => array('value' => (string)'Online'),
+          //':input[name="field_event_location[und][0][field_event_location_type][' . $language . ']"],value="On-campus"' => array('value' => (string)'On-campus'),
+          //':input[name="field_event_location[und][0][field_event_location_type][' . $language . ']"],value="Off-campus"' => array('value' => (string)'Off-campus'),
+        )
+      );
+*/
+
+      $form['field_event_location'][$language][0]['field_link_map']['#states'] = array(
+        'visible' => array(
+          ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'0'),
+          ':input[name="field_event_location[und][0][field_event_location_type][' . $language . ']"],value="Online"' => array('value' => (string)'Online'),
+          //':input[name="field_event_location[und][0][field_event_location_type][' . $language . ']"],value="On-campus"' => array('value' => (string)'On-campus'),
+          //':input[name="field_event_location[und][0][field_event_location_type][' . $language . ']"],value="Off-campus"' => array('value' => (string)'Off-campus'),
+        )
+      );
+
+      //$form['field_event_location'][$language][0]['field_link_map']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+        //array('value' => (string)'1'),
+      //);
+
       $form['field_industry']['#access'] = FALSE;
       $form['field_discipline']['#access'] = FALSE;
     }

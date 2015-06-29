@@ -133,6 +133,7 @@ features[field_instance][] = node-event-field_tag
 features[field_instance][] = node-event-field_target_audience
 features[field_instance][] = node-event-field_time_zone
 features[node][] = event
+features[taxonomy][] = event_attendance_statement
 features[variable][] = field_bundle_settings_field_collection_item__field_person_fac_other
 features[variable][] = field_bundle_settings_node__event
 features[variable][] = menu_options_event

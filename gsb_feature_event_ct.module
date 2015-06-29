@@ -99,47 +99,6 @@ function gsb_feature_event_ct_field_formatter_info() {
 }
 
 /**
- * Implements hook_field_formatter_view(). This code just passes straight
- */
-function gsb_feature_event_ct_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
-  $elements = array();
-  foreach ($items as $delta => $item) {
-    $db_format = date_type_format($field['type']);
-    $date = new DateObject($item['value'], $item['timezone_db'], $db_format);
-    $timezone = isset($item['timezone']) ? $item['timezone'] : '';
-    $timezone = timezone_open(date_get_timezone($field['settings']['tz_handling'], $timezone));
-    date_timezone_set($date, $timezone);
-
-    $day = date_format_date($date, 'custom', 'l');
-    $month_day = date_format_date($date, 'custom', 'M d');
-    $time = date_format_date($date, 'custom', 'i') !== '00' ? date_format_date($date, 'custom', 'g:ia') : date_format_date($date, 'custom', 'ga');
-    if (isset($item['value2'])) {
-      $date2 = new DateObject($item['value2'], $item['timezone_db'], $db_format);
-      date_timezone_set($date2, $timezone);
-      if (date_format_date($date, 'custom', 'Y-m-d') == date_format_date($date2, 'custom', 'Y-m-d')) {
-        //same date
-        $time2 = date_format_date($date2, 'custom', 'i') !== '00' ? date_format_date($date2, 'custom', 'g:ia') : date_format_date($date2, 'custom', 'ga');
-        if ($time2 != $time) {
-          $time .= ' - ' . $time2;
-        }
-        $output = '<div class="event-calendar-featured"><div class="day">' . $day . '</div><div class="date"><strong>' . $month_day . '</strong></div><div class="time">' . $time . '</div></div>';
-      }
-      else {
-        $month_day2 = date_format_date($date2, 'custom', 'M d');
-        $output = '<div class="event-calendar-featured"><div class="date"><strong>' . $month_day . '</strong></div><span class="to">to</span><div class="date"><strong>' . $month_day2 . '</strong></div></div>';
-      }
-    }
-    else {
-      $output = '<div class="event-calendar-featured"><div class="day">' . $day . '</div><div class="date"><strong>' . $month_day . '</strong></div><div class="time">' . $time . '</div></div>';
-    }
-    $elements[$delta] = array(
-      '#markup' => $output,
-    );
-  }
-  return $elements;
-}
-
-/**
  * Implements hook_form_FORM_ID_alter().
  */
 function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {

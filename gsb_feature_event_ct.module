@@ -166,6 +166,12 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
 
       $language = $form['language']['#value'];
 
+      foreach($form['field_event_location']['und'] as $key => $value) {
+        if (is_numeric($key) && $key >= 0) {
+          $form['field_event_location']['und'][$key]['field_address']['und'][0]['locality_block']['postal_code']['#title'] = 'Zip Code';
+        }
+      }
+
       $form['field_link_single']['#states'] = array(
         'invisible' => array(
           ':input[name="field_event_detail[' . $language . ']"],value="1"' => array('!value' => (string)'1'),
@@ -209,8 +215,7 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
       foreach ($form['field_event_location'][$language] as $key => $value) {
         if (is_numeric($key) && $key >= 0) {
           $form['field_event_location'][$language][$key]['field_link_map']['#states'] = array(
-            'visible' => array(
-              ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'0'),
+            'invisible' => array(
               ':input[name="field_event_location[und][' . $key . '][field_event_location_type][' . $language . ']"],value="Online"' => array('value' => (string)'Online'),
             )
           );
@@ -248,6 +253,8 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
 
       $form['field_industry']['#access'] = FALSE;
       $form['field_discipline']['#access'] = FALSE;
+
+      drupal_add_js(drupal_get_path('module', 'gsb_feature_event_ct') . '/js/gsb_feature_event_ct.js');
 
       // Perform additional validation.
       $form['#validate'][] = 'gsb_feature_event_ct_form_validate';

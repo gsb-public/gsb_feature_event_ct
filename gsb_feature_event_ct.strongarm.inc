@@ -106,6 +106,12 @@ function gsb_feature_event_ct_strongarm() {
       'alumni_name' => array(
         'custom_settings' => FALSE,
       ),
+      'compact' => array(
+        'custom_settings' => FALSE,
+      ),
+      'expanded' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -113,7 +119,7 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '3',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '12',
         ),
         'workbench_access' => array(
           'weight' => '1',
@@ -122,10 +128,10 @@ function gsb_feature_event_ct_strongarm() {
           'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '15',
+          'weight' => '13',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '14',
         ),
       ),
       'display' => array(

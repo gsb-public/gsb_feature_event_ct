@@ -45,11 +45,13 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'event';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_taxonomy';
+  $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Additional Topics',
-    'weight' => '14',
-    'children' => array(),
+    'weight' => '34',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+    ),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -61,6 +63,35 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_additional_topics|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contact_information|node|event|form';
+  $field_group->group_name = 'group_contact_information';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Contact Information',
+    'weight' => '33',
+    'children' => array(
+      0 => 'field_email',
+      1 => 'field_person_title',
+      2 => 'field_person_ref',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_contact_information|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -88,6 +119,33 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_department|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_description|node|event|form';
+  $field_group->group_name = 'group_description';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Description',
+    'weight' => '27',
+    'children' => array(
+      0 => 'field_body',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_description|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -149,22 +207,22 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'event';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_location';
+  $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
-    'label' => 'Location',
-    'weight' => '22',
+    'label' => 'Locations',
+    'weight' => '26',
     'children' => array(
-      0 => 'field_address',
-      1 => 'field_link_map',
+      0 => 'field_event_location',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Locations',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_event_location|node|event|form'] = $field_group;
@@ -177,19 +235,26 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'event';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_location';
+  $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
-    'label' => 'Registration',
-    'weight' => '23',
-    'children' => array(),
+    'label' => 'Registration & Pricing',
+    'weight' => '30',
+    'children' => array(
+      0 => 'field_register_url',
+      1 => 'field_link_event_more_info',
+      2 => 'field_event_attendance_statement',
+      3 => 'field_price',
+      4 => 'field_date_time',
+    ),
     'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Registration & Pricing',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_event_registration|node|event|form'] = $field_group;
@@ -229,12 +294,12 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'event';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_location';
+  $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Speakers',
-    'weight' => '24',
+    'weight' => '29',
     'children' => array(
-      0 => 'field_person_fac_other',
+      0 => 'field_event_speakers',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -282,6 +347,60 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_ft_evnt_wrp|node|event|featured'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_image|node|event|form';
+  $field_group->group_name = 'group_image';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Image',
+    'weight' => '25',
+    'children' => array(
+      0 => 'field_image_single_public',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_image|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_keyword|node|event|form';
+  $field_group->group_name = 'group_keyword';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Keyword',
+    'weight' => '35',
+    'children' => array(
+      0 => 'field_tag',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_keyword|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -337,6 +456,60 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_region|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_schedule|node|event|form';
+  $field_group->group_name = 'group_schedule';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Schedule',
+    'weight' => '31',
+    'children' => array(
+      0 => 'field_schedule',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_schedule|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_sponsors|node|event|form';
+  $field_group->group_name = 'group_sponsors';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Sponsors',
+    'weight' => '32',
+    'children' => array(
+      0 => 'field_event_sponsors',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_sponsors|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -595,6 +768,33 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_who_should_attend|node|event|form';
+  $field_group->group_name = 'group_who_should_attend';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Who Should Attend',
+    'weight' => '28',
+    'children' => array(
+      0 => 'field_event_who_attend',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_who_should_attend|node|event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_buttons|node|event|default';
   $field_group->group_name = 'group_wrapper_buttons';
   $field_group->entity_type = 'node';
@@ -623,6 +823,41 @@ function gsb_feature_event_ct_field_group_info() {
     ),
   );
   $export['group_wrapper_buttons|node|event|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_event|node|event|form';
+  $field_group->group_name = 'group_wrapper_event';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Event',
+    'weight' => '9',
+    'children' => array(
+      0 => 'group_additional_topics',
+      1 => 'group_event_location',
+      2 => 'group_event_registration',
+      3 => 'group_event_speakers',
+      4 => 'group_image',
+      5 => 'group_description',
+      6 => 'group_who_should_attend',
+      7 => 'group_schedule',
+      8 => 'group_sponsors',
+      9 => 'group_contact_information',
+      10 => 'group_keyword',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_wrapper_event|node|event|form'] = $field_group;
 
   return $export;
 }

@@ -27,32 +27,65 @@ function gsb_feature_event_ct_speaker_lookup($nid,$index) {
   $node = node_load($nid);
   $title = '';
   if ($node->type == 'faculty') {
-    $rank = $node->field_rank['und'][0]['value'];
-    $tid = $node->field_academic_area_single['und'][0]['tid'];
-    $term = taxonomy_term_load($tid);
-    $title = $rank . ', ' . $term->name;
+    if (!empty($node->field_rank['und'][0]['value'])) {
+      $title = $node->field_rank['und'][0]['value'];
+    }
+    if (!empty($node->field_academic_area_single['und'][0]['tid'])) {
+      $tid = $node->field_academic_area_single['und'][0]['tid'];
+      $term = taxonomy_term_load($tid);
+      if (strlen($term->name) > 0) {
+        if (strlen($title) > 0) {
+          $title .= ', ';
+        }
+        $title .= $term->name;
+      }
+    }
   }
   else if ($node->type == 'phd_candidate') {
-    $tid = $node->field_academic_area_single['und'][0]['tid'];
-    $term = taxonomy_term_load($tid);
-    $title = $term->name;
+    if (!empty($node->field_academic_area_single['und'][0]['tid'])) {
+      $tid = $node->field_academic_area_single['und'][0]['tid'];
+      $term = taxonomy_term_load($tid);
+      if (strlen($term->name) > 0) {
+        $title = 'PhD Program, ' . $term->name;
+      }
+    }
   }
   else if ($node->type == 'msx_fellows') {
-    $date = $node->field_year['und'][0]['value'];
-    $date = new DateObject(strtotime($date), 'UTC');
-    $year = $date->format('Y');
-    $title = 'Class of ' . $year;
+    if (!empty($node->field_year['und'][0]['value'])) {
+      $date = $node->field_year['und'][0]['value'];
+      $date = new DateObject(strtotime($date), 'UTC');
+      $year = $date->format('Y');
+      if (strlen($year) > 0) {
+        $title = 'Class of ' . $year;
+      }
+    }
   }
   else if ($node->type == 'alumni') {
-    $title = $node->field_title_position_single['und'][0]['value'];
+    if (!empty($node->field_title_position_single['und'][0]['value'])) {
+      $title = $node->field_title_position_single['und'][0]['value'];
+    }
   }
   else if ($node->type == 'staff') {
-    $entity_id = $node->field_staff_item['und'][0]['value'];
-    $entity = entity_load_single('field_collection_item', $entity_id);
-    $tid = $entity->field_department_office['und'][0]['tid'];
-    $term = taxonomy_term_load($tid);
-    $position = $entity->field_title_position_single['und'][0]['value'];
-    $title = $position . ', ' . $term->name;
+    if (!empty($node->field_staff_item['und'][0]['value'])) {
+      $entity_id = $node->field_staff_item['und'][0]['value'];
+      $entity = entity_load_single('field_collection_item', $entity_id);
+      if (!empty($entity->field_title_position_single['und'][0]['value'])) {
+        $position = $entity->field_title_position_single['und'][0]['value'];
+        if (strlen($position) > 0) {
+          $title = $position;
+        }
+      }
+      if (!empty($entity->field_department_office['und'][0]['tid'])) {
+        $tid = $entity->field_department_office['und'][0]['tid'];
+        $term = taxonomy_term_load($tid);
+        if (strlen($title) > 0) {
+          $title .= ', ';
+        }
+        if (strlen($term->name) > 0) {
+          $title .= $term->name;
+        }
+      }
+    }
   }
   $data = array('nid' => $nid, 'title' => $title, 'index' => $index);
   return drupal_json_output($data);

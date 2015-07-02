@@ -807,7 +807,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_editorial_summary',
     'label' => 'Dek',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(

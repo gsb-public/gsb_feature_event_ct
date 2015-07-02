@@ -2,6 +2,12 @@
   Drupal.behaviors.gsb_feature_event_ct = {
     attach: function (context, settings) {
 
+      // clear the registration date field if this is a new node
+      var currentNid = Drupal.settings.gsb_feature_event_ct.currentNid;
+      if (currentNid == null) {
+        $('#edit-field-date-time-und-0-value-timeEntry-popup-1').val('');
+      }
+
       // location on-campus
       $("input[id*='field-event-location-type-und-on-campus']").each(function() {
         var index = Drupal.gsb_feature_event_ct.get_location_index($(this));
@@ -59,6 +65,59 @@
       $("input[name$='[field_person_ref][und][0][target_id]']").on('blur', function(e) {
         $(this).addClass('speaker-completed');
         setTimeout("Drupal.gsb_feature_event_ct.lookup_speaker()", 100);
+      });
+
+      // hide the require * if the event detail is set to 'Link to an existing page'
+      // for the 'Open URL in a New Window' checkbox on the Title URL field. Wee.
+      $('#edit-field-event-detail-und-1').on('change',function() {
+        if ($('#edit-field-event-detail-und-1').is(':checked')) {
+          $("label[for=edit-field-link-single-und-0-attributes-target]").children().hide();
+        }
+      });
+
+      var cleanupFieldsets = function($event) {
+
+        var hide_fieldgroups = {
+          node_event_form_group_description: "node_event_form_group_description",
+          node_event_form_group_speakers: "node_event_form_group_speakers",
+          node_event_form_group_registration: "node_event_form_group_registration",
+          node_event_form_group_schedule: "node_event_form_group_schedule",
+          node_event_form_group_contact: "node_event_form_group_contact"
+        };
+
+        $("fieldset").each(function(){
+
+          var fieldset = $(this);
+          // Find out if the fieldset contains only elements that are hidden,
+          // regardless of the fieldset itself being hidden.
+          var countShownSubFields = 0;
+          $(fieldset).find('div.form-wrapper').each(function(){
+            if ($(this).css('display') === 'block'){
+              countShownSubFields++;
+            }
+          });
+          var data = fieldset.data();
+          // Vertical tab support
+          if (data && data.verticalTab) {
+            for (var key in hide_fieldgroups) {
+              if (hide_fieldgroups.hasOwnProperty(key)) {
+                if (data.verticalTab.fieldset[0].id === hide_fieldgroups[data.verticalTab.fieldset[0].id] && $event == 1) {
+                  fieldset.data('verticalTab').item.hide();
+                }
+                else {
+                  fieldset.data('verticalTab').item.show();
+                }
+              }
+            }
+          }
+        }); // end of 'fieldset' each
+
+      } // end of cleanupFieldsets
+
+      $(document).ready(function() {
+        $("[id^=edit-field-event-detail-und-]").change(function () {
+          cleanupFieldsets($(this).val());
+        });
       });
 
     } // end attach

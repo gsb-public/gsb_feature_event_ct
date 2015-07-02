@@ -255,6 +255,10 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
 
       foreach($form['field_event_speakers'][$language] as $key => $value) {
         if (is_numeric($key) && $key >= 0) {
+
+          // Remove N/A option for field_speakers_person_type
+          unset($form['field_event_speakers']['und'][0]['field_speakers_person_type']['und']['#options']['_none']);
+
           $form['field_event_speakers'][$language][$key]['field_first_name']['#states'] = array(
             'invisible' => array(
               ':input[name="field_event_speakers[' . $language . '][' . $key . '][field_speakers_person_type][' . $language . ']"]' => array('value' => '0'),
@@ -283,6 +287,7 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
       $form['field_industry']['#access'] = FALSE;
       $form['field_discipline']['#access'] = FALSE;
 
+      drupal_add_js(array('gsb_feature_event_ct' => array('currentNid' => $form['nid']['#value'])), 'setting');
       drupal_add_js(drupal_get_path('module', 'gsb_feature_event_ct') . '/js/gsb_feature_event_ct.js');
 
       // Perform additional validation.

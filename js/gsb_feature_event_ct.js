@@ -109,9 +109,10 @@
       } // end of cleanupFieldsets
 
       $(document).ready(function() {
-        $("[id^=edit-field-event-detail-und-]").change(function () {
+        $("[id^=edit-field-event-detail-und-]").on('change', function () {
           cleanupFieldsets($(this).val());
         });
+        cleanupFieldsets($("input[type='radio'][name='field_event_detail[und]']:checked").val());
       });
 
     } // end attach

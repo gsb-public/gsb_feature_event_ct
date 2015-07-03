@@ -660,7 +660,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -671,7 +671,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'display_all_day' => 0,
-        'increment' => 15,
+        'increment' => 5,
         'input_format' => 'M j Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
@@ -807,7 +807,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_editorial_summary',
     'label' => 'Dek',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -1831,7 +1831,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => '300 x 176 px',
+    'description' => '600 x 352 px',
     'display' => array(
       'alumni_featured_content' => array(
         'label' => 'hidden',
@@ -2501,7 +2501,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_person_title',
-    'label' => 'Contact Title and Department',
+    'label' => 'Contact Title & Department',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -3660,12 +3660,12 @@ function gsb_feature_event_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('300 x 176 px');
+  t('600 x 352 px');
   t('Additional Topics');
   t('Attendance statement');
   t('Contact Email');
   t('Contact Name');
-  t('Contact Title and Department');
+  t('Contact Title & Department');
   t('Date');
   t('Dek');
   t('Description');

@@ -78,8 +78,8 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '33',
     'children' => array(
       0 => 'field_email',
-      1 => 'field_person_title',
-      2 => 'field_person_ref',
+      1 => 'field_person_ref',
+      2 => 'field_person_title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -218,7 +218,7 @@ function gsb_feature_event_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Locations',
       'instance_settings' => array(
-        'required_fields' => 0,
+        'required_fields' => 1,
         'classes' => '',
         'description' => '',
       ),
@@ -241,10 +241,10 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '30',
     'children' => array(
       0 => 'field_register_url',
-      1 => 'field_link_event_more_info',
+      1 => 'field_date_time',
       2 => 'field_event_attendance_statement',
-      3 => 'field_price',
-      4 => 'field_date_time',
+      3 => 'field_link_event_more_info',
+      4 => 'field_price',
       5 => 'field_register_time_zone',
     ),
     'format_type' => 'tab',

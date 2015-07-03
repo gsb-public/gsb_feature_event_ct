@@ -79,6 +79,7 @@
 
         var hide_fieldgroups = {
           node_event_form_group_description: "node_event_form_group_description",
+          node_event_form_group_image: "node_event_form_group_image",
           node_event_form_group_event_speakers: "node_event_form_group_event_speakers",
           node_event_form_group_who_should_attend: "node_event_form_group_who_should_attend",
           node_event_form_group_sponsors: "node_event_form_group_sponsors",

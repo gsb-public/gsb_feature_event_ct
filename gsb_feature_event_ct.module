@@ -333,8 +333,16 @@ function gsb_feature_event_ct_form_node_form_alter(&$form, &$form_state) {
       $form['field_industry']['#access'] = FALSE;
       $form['field_discipline']['#access'] = FALSE;
 
-      drupal_add_js(array('gsb_feature_event_ct' => array('currentNid' => $form['nid']['#value'])), 'setting');
-      drupal_add_js(drupal_get_path('module', 'gsb_feature_event_ct') . '/js/gsb_feature_event_ct.js');
+      $form['#attached']['js'] = array(
+        array(
+          'type' => 'file',
+          'data' => drupal_get_path('module', 'gsb_feature_event_ct') . '/js/gsb_feature_event_ct.js',
+        ),
+        array(
+          'type' => 'setting',
+          'data' => array('gsb_feature_event_ct' => array('currentNid' => $form['nid']['#value'])),
+        ),
+      );
 
       // Perform additional validation.
       $form['#validate'][] = 'gsb_feature_event_ct_form_validate';

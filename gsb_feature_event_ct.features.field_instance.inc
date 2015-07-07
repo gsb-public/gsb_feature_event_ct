@@ -2815,11 +2815,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'tzfield',
+      'module' => 'options',
       'settings' => array(
         'size' => 60,
       ),
-      'type' => 'tzfield_autocomplete',
+      'type' => 'options_select',
       'weight' => 17,
     ),
     'workbench_access_field' => 0,
@@ -3648,11 +3648,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'tzfield',
+      'module' => 'options',
       'settings' => array(
         'size' => 60,
       ),
-      'type' => 'tzfield_autocomplete',
+      'type' => 'options_select',
       'weight' => 6,
     ),
     'workbench_access_field' => 0,

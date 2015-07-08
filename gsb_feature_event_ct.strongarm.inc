@@ -107,10 +107,10 @@ function gsb_feature_event_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'compact' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'expanded' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -170,6 +170,14 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'alumni_featured_content' => array(
             'weight' => '13',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '22',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
+            'weight' => '12',
             'visible' => FALSE,
           ),
         ),

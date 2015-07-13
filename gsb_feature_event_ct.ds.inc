@@ -543,7 +543,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'div',
-          'ow-cl' => '',
+          'ow-cl' => 'format-body',
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,

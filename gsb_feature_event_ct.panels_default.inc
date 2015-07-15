@@ -42,7 +42,7 @@ function gsb_feature_event_ct_default_panels_mini() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Questions? Contact';
   $display->uuid = '207e5c65-9494-4f4b-af53-08b7eec6f6b3';
   $display->content = array();
   $display->panels = array();
@@ -54,13 +54,15 @@ function gsb_feature_event_ct_default_panels_mini() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'entityreference_label',
+      'label' => 'hidden',
+      'formatter' => 'entityreference_entity_view',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'link' => 0,
+        'view_mode' => 'people_fpp',
+        'links' => 0,
       ),
       'context' => 'requiredcontext_entity:node_1',
       'override_title' => 0,
@@ -85,7 +87,7 @@ function gsb_feature_event_ct_default_panels_mini() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
+      'label' => 'hidden',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -114,12 +116,17 @@ function gsb_feature_event_ct_default_panels_mini() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'email_default',
+      'label' => 'hidden',
+      'formatter' => 'email_contact_link',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'redirection_to' => 'referer',
+        'custom_path' => '',
+        'link_text' => 'Email',
+        'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+      ),
       'context' => 'requiredcontext_entity:node_1',
       'override_title' => 0,
       'override_title_text' => '',

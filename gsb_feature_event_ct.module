@@ -382,3 +382,14 @@ function gsb_feature_event_ct_field_widget_form_alter(&$element, &$form_state, $
   }
 }
 
+/**
+ * Implements hook_panels_pane_content_alter().
+ */
+function gsb_feature_event_ct_panels_pane_content_alter($content, $pane, $args, $contexts) {
+  // For the Event Contacts mini panel pane - hide the pane if there are no contacts
+  if ($content && $content->type == 'panels_mini' && $pane->subtype == 'event_contacts') {
+    if (empty($contexts['panelizer']->data->field_person_ref)) {
+      $content->content = '';
+    }
+  }
+}

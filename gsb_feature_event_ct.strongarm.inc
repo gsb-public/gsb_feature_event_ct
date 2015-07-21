@@ -172,7 +172,7 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => FALSE,
           ),
           'alumni_featured_content' => array(
-            'weight' => '13',
+            'weight' => '26',
             'visible' => FALSE,
           ),
           'compact' => array(

@@ -353,7 +353,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 28,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -560,7 +560,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 29,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -681,7 +681,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 22,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -869,7 +869,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 30,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -1061,7 +1061,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 21,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -1176,7 +1176,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 23,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -1239,7 +1239,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long_time',
+          'format_type' => 'panopoly_day',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1375,7 +1375,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long_time',
+          'format_type' => 'panopoly_day',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1383,7 +1383,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -1554,7 +1554,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 17,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -1623,7 +1623,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'field_collection',
         'settings' => array(
           'conditions' => array(),
-          'view_mode' => 'full',
+          'view_mode' => 'teaser',
         ),
         'type' => 'field_collection_fields',
         'weight' => 2,
@@ -1633,7 +1633,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'field_collection',
         'settings' => array(
           'conditions' => array(),
-          'view_mode' => 'full',
+          'view_mode' => 'teaser',
         ),
         'type' => 'field_collection_fields',
         'weight' => 2,
@@ -1665,7 +1665,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'field_collection',
         'settings' => array(
           'conditions' => array(),
-          'view_mode' => 'full',
+          'view_mode' => 'teaser',
         ),
         'type' => 'field_collection_fields',
         'weight' => 2,
@@ -1683,10 +1683,14 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'conditions' => array(),
+          'view_mode' => 'teaser',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 1,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -1699,7 +1703,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'field_collection',
         'settings' => array(
           'conditions' => array(),
-          'view_mode' => 'full',
+          'view_mode' => 'teaser',
         ),
         'type' => 'field_collection_fields',
         'weight' => 2,
@@ -1802,7 +1806,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -1914,7 +1918,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -2025,7 +2029,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -2231,7 +2235,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 25,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -2409,7 +2413,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -2541,7 +2545,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 19,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -2676,7 +2680,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 32,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -2786,7 +2790,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 18,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -2898,7 +2902,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 20,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -3068,7 +3072,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -3239,7 +3243,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -3352,7 +3356,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 24,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -3493,7 +3497,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -3665,7 +3669,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 31,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -3799,7 +3803,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 34,
       ),
       'insight_featured_card' => array(
         'label' => 'above',
@@ -3941,7 +3945,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 33,
       ),
       'insight_featured_card' => array(
         'label' => 'hidden',
@@ -4062,7 +4066,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 27,
       ),
       'insight_featured_card' => array(
         'label' => 'inline',
@@ -4191,7 +4195,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'insight_featured_card' => array(
         'label' => 'above',

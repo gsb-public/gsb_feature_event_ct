@@ -164,7 +164,7 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => FALSE,
           ),
           'idea_story_related' => array(
-            'weight' => '7',
+            'weight' => '26',
             'visible' => FALSE,
           ),
           'insight_featured_card' => array(

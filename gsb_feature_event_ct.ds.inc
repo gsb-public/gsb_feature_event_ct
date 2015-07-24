@@ -840,7 +840,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'event';
   $ds_fieldsetting->view_mode = 'idea_story_related';
   $ds_fieldsetting->settings = array(
-    'field_address' => array(
+    'field_event_date' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -853,7 +853,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_event_date' => array(
+    'field_event_location' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -1583,12 +1583,12 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_event_date',
-        1 => 'field_address',
+        1 => 'field_event_location',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
-      'field_address' => 'ds_content',
+      'field_event_location' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -448,6 +448,7 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'lb' => 'Location Information',
           'lb-el' => 'h2',
           'lb-col' => TRUE,
+          'prefix' => '<span id="full-location"></span>',
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => '',

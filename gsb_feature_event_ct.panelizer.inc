@@ -88,19 +88,26 @@ function gsb_feature_event_ct_panelizer_defaults() {
     $pane->access = array(
       'plugins' => array(
         0 => array(
-          'name' => 'city',
+          'name' => 'php',
           'settings' => array(
-            'city' => 'Palo Alto',
+            'description' => 'City (Palo Alto or Stanford)',
+            'php' => '$language = $contexts[\'panelizer\']->data->language;
+$entity_ids = array();
+foreach($contexts[\'panelizer\']->data->field_event_location[$language] as $key => $value) {
+  $entity_ids[] = $value[\'value\'];
+}
+$entities = entity_load(\'field_collection_item\', $entity_ids);
+foreach($entities as $entity) {
+  $location_type = $entity->field_event_location_type[$language][0][\'value\'];
+  if ($location_type == \'On campus\') {
+    $city = strtolower($entity->field_address[$language][0][\'locality\']);
+    if ($city == \'stanford\' || $city == \'palo alto\') {
+      return TRUE;
+    }
+  }
+}
+return FALSE;',
           ),
-          'context' => 'panelizer',
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'city',
-          'settings' => array(
-            'city' => 'Stanford',
-          ),
-          'context' => 'panelizer',
           'not' => FALSE,
         ),
       ),

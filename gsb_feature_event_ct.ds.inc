@@ -1380,6 +1380,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_event_attendance_statement' => 'footer',
       'field_price' => 'footer',
       'field_date_time' => 'footer',
+      'field_register_time_zone' => 'footer',
       'field_register_url' => 'footer',
       'field_link_event_more_info' => 'footer',
       'field_event_location' => 'footer',

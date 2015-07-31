@@ -1661,9 +1661,6 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_editorial_summary' => 'left',
       'field_image_single_public' => 'right',
     ),
-    'limit' => array(
-      'field_event_location' => '1',
-    ),
     'classes' => array(),
     'wrappers' => array(
       'left' => 'div',

@@ -117,7 +117,7 @@ function gsb_feature_event_ct_default_panels_mini() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'email_contact_link',
+      'formatter' => 'gsb_field_formatter_email_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,

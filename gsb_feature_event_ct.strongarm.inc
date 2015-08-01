@@ -115,6 +115,9 @@ function gsb_feature_event_ct_strongarm() {
       'main_list' => array(
         'custom_settings' => TRUE,
       ),
+      'event_contacts' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -185,6 +188,10 @@ function gsb_feature_event_ct_strongarm() {
           ),
           'main_list' => array(
             'weight' => '13',
+            'visible' => FALSE,
+          ),
+          'event_contacts' => array(
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),

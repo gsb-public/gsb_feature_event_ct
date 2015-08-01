@@ -4320,7 +4320,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'tzfield',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
         ),

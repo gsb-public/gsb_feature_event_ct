@@ -117,7 +117,7 @@ function gsb_feature_event_ct_default_panels_mini() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'gsb_field_formatter_email_default',
+      'formatter' => 'email_contact_link',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -126,10 +126,16 @@ function gsb_feature_event_ct_default_panels_mini() {
         'custom_path' => '',
         'link_text' => 'Email',
         'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+        'conditions' => array(
+          0 => array(
+            'condition' => '',
+          ),
+        ),
       ),
       'context' => 'requiredcontext_entity:node_1',
       'override_title' => 0,
       'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(

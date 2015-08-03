@@ -950,7 +950,14 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
+        ),
       ),
     ),
     'field_editorial_summary' => array(
@@ -989,6 +996,26 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -1648,16 +1675,18 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_event_date',
         1 => 'title',
-        2 => 'field_event_location',
-        3 => 'field_editorial_summary',
+        2 => 'field_link_single',
+        3 => 'field_event_location',
+        4 => 'field_editorial_summary',
       ),
       'right' => array(
-        4 => 'field_image_single_public',
+        5 => 'field_image_single_public',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'left',
       'title' => 'left',
+      'field_link_single' => 'left',
       'field_event_location' => 'left',
       'field_editorial_summary' => 'left',
       'field_image_single_public' => 'right',

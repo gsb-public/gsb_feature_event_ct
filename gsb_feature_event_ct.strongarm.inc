@@ -187,7 +187,7 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => FALSE,
           ),
           'main_list' => array(
-            'weight' => '13',
+            'weight' => '14',
             'visible' => FALSE,
           ),
           'event_contacts' => array(

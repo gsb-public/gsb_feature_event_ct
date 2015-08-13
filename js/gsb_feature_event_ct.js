@@ -78,7 +78,7 @@
             else {
               $("[name='field_event_speakers[und]["+key+"][field_first_name][und][0][value]']").val('');
               $("[name='field_event_speakers[und]["+key+"][field_last_name][und][0][value]']").val('');
-              $("[name='field_event_speakers[und]["+key+"][field_link_single][und][0][value]']").val('');
+              $("[name='field_event_speakers[und]["+key+"][field_link_single][und][0][url]']").val('');
             }
           });
         });

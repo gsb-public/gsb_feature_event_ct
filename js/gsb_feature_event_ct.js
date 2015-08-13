@@ -66,6 +66,23 @@
           cleanupFieldsets($(this).val());
         });
         cleanupFieldsets($("input[type='radio'][name='field_event_detail[und]']:checked").val());
+
+        // clear the fields based on speaker type
+        $("[name*='[field_speakers_person_type][und]']").each(function(){
+          $(this).on('change', function () {
+            key = $(this).attr('id').match(/\d+/);
+            if ($(this).val() == 1) {
+              $("[name='field_event_speakers[und]["+key+"][field_person_ref][und][0][target_id]']").val('');
+              $("[name='field_event_speakers[und]["+key+"][field_title][und][0][value]']").val('');
+            }
+            else {
+              $("[name='field_event_speakers[und]["+key+"][field_first_name][und][0][value]']").val('');
+              $("[name='field_event_speakers[und]["+key+"][field_last_name][und][0][value]']").val('');
+              $("[name='field_event_speakers[und]["+key+"][field_link_single][und][0][value]']").val('');
+            }
+          });
+        });
+
       });
 
     } // end attach

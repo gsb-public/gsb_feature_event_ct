@@ -903,22 +903,11 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'main_list' => array(
         'label' => 'hidden',
-        'module' => 'smart_trim',
+        'module' => 'text',
         'settings' => array(
           'conditions' => array(),
-          'more_link' => 0,
-          'more_text' => '',
-          'summary_handler' => 'full',
-          'trim_length' => 200,
-          'trim_link' => 0,
-          'trim_options' => array(
-            'text' => 0,
-          ),
-          'trim_preserve_tags' => '',
-          'trim_suffix' => '...',
-          'trim_type' => 'chars',
         ),
-        'type' => 'smart_trim_format',
+        'type' => 'text_default',
         'weight' => 4,
       ),
       'megamenu' => array(

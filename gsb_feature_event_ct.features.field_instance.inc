@@ -3326,7 +3326,14 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'gsb_field_formatter',
         'settings' => array(
-          'conditions' => array(),
+          'conditions' => array(
+            0 => array(
+              'condition' => 'hide_if_empty',
+              'configuration' => array(
+                'target' => 'field_date_time',
+              ),
+            ),
+          ),
         ),
         'type' => 'gsb_field_formatter_time_zone_abbreviated',
         'weight' => 13,

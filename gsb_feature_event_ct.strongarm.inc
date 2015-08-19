@@ -179,11 +179,11 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => FALSE,
           ),
           'main_list' => array(

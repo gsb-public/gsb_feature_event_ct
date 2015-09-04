@@ -151,15 +151,15 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '19',
+            'weight' => '31',
             'visible' => FALSE,
           ),
           'event_listing' => array(
-            'weight' => '19',
+            'weight' => '30',
             'visible' => FALSE,
           ),
           'event_upcoming' => array(
-            'weight' => '19',
+            'weight' => '32',
             'visible' => FALSE,
           ),
           'featured' => array(
@@ -171,7 +171,7 @@ function gsb_feature_event_ct_strongarm() {
             'visible' => FALSE,
           ),
           'insight_featured_card' => array(
-            'weight' => '24',
+            'weight' => '30',
             'visible' => FALSE,
           ),
           'alumni_featured_content' => array(

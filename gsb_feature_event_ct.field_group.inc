@@ -327,9 +327,9 @@ function gsb_feature_event_ct_field_group_info() {
     'label' => 'ft-event-wrp',
     'weight' => '1',
     'children' => array(
-      0 => 'field_address',
-      1 => 'field_editorial_summary',
-      2 => 'field_event_date',
+      0 => 'field_editorial_summary',
+      1 => 'field_event_date',
+      2 => 'field_link_single',
       3 => 'title',
       4 => 'group_tag_wrap',
     ),
@@ -523,13 +523,10 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_ft_evnt_wrp';
   $field_group->data = array(
     'label' => 'tag-wrp',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'field_business_insight_topic',
-      1 => 'field_event_category',
-      2 => 'field_event_series',
-      3 => 'field_region',
-      4 => 'field_tag',
+      1 => 'field_tag',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -590,10 +587,7 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '4',
     'children' => array(
       0 => 'field_business_insight_topic',
-      1 => 'field_event_category',
-      2 => 'field_event_series',
-      3 => 'field_region',
-      4 => 'field_tag',
+      1 => 'field_tag',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -658,13 +652,10 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '12',
+    'weight' => '27',
     'children' => array(
       0 => 'field_business_insight_topic',
-      1 => 'field_event_category',
-      2 => 'field_event_series',
-      3 => 'field_region',
-      4 => 'field_tag',
+      1 => 'field_tag',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(

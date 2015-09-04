@@ -168,7 +168,14 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
+        ),
       ),
     ),
     'field_event_date' => array(
@@ -181,6 +188,26 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -650,19 +677,13 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
-      ),
-    ),
-    'field_address' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
         ),
       ),
     ),
@@ -686,13 +707,6 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_event_category' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-        ),
-      ),
-    ),
     'field_event_date' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -703,13 +717,6 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_event_series' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
         ),
       ),
     ),
@@ -726,17 +733,30 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_region' => array(
+    'field_tag' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
         ),
       ),
     ),
-    'field_tag' => array(
+    'field_link_single' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -759,12 +779,34 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         'wrapper' => 'h2',
         'class' => '',
         'ft' => array(),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
+        ),
       ),
     ),
-    'field_event_date' => array(
+    'field_link_single' => array(
       'formatter_settings' => array(
-        'ft' => array(),
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
       ),
     ),
   );
@@ -895,7 +937,34 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         'wrapper' => 'h2',
         'class' => '',
         'ft' => array(),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
       ),
     ),
   );
@@ -961,7 +1030,14 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
+        ),
       ),
     ),
     'field_event_date' => array(
@@ -987,6 +1063,26 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -1168,19 +1264,13 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
-      ),
-    ),
-    'field_address' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_not_empty',
+            'configuration' => array(
+              'target' => 'field_link_single',
+            ),
+          ),
         ),
       ),
     ),
@@ -1220,6 +1310,26 @@ function gsb_feature_event_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -1366,12 +1476,14 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_event_date',
         1 => 'title',
-        2 => 'field_event_location',
+        2 => 'field_link_single',
+        3 => 'field_event_location',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_event_location' => 'ds_content',
     ),
     'classes' => array(),
@@ -1512,14 +1624,11 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_event_date',
         1 => 'title',
-        2 => 'field_address',
+        2 => 'field_link_single',
         3 => 'field_editorial_summary',
         4 => 'group_tags_wrapper',
-        6 => 'field_event_category',
-        7 => 'field_business_insight_topic',
-        8 => 'field_region',
-        9 => 'field_tag',
-        10 => 'field_event_series',
+        6 => 'field_business_insight_topic',
+        7 => 'field_tag',
       ),
       'right' => array(
         5 => 'field_image_single_public',
@@ -1528,15 +1637,12 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'fields' => array(
       'field_event_date' => 'left',
       'title' => 'left',
-      'field_address' => 'left',
+      'field_link_single' => 'left',
       'field_editorial_summary' => 'left',
       'group_tags_wrapper' => 'left',
       'field_image_single_public' => 'right',
-      'field_event_category' => 'left',
       'field_business_insight_topic' => 'left',
-      'field_region' => 'left',
       'field_tag' => 'left',
-      'field_event_series' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -1548,6 +1654,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|event|event_listing'] = $ds_layout;
 
@@ -1563,14 +1670,14 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_event_date',
         1 => 'title',
-        2 => 'field_address',
+        2 => 'field_link_single',
         3 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
       'title' => 'ds_content',
-      'field_address' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
     ),
     'classes' => array(),
@@ -1580,6 +1687,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|event|event_upcoming'] = $ds_layout;
 
@@ -1638,30 +1747,24 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         0 => 'title',
         1 => 'field_image_single_public',
         2 => 'group_ft_evnt_wrp',
-        3 => 'field_event_date',
-        4 => 'field_address',
+        3 => 'field_link_single',
+        4 => 'field_event_date',
         5 => 'field_editorial_summary',
         6 => 'group_tag_wrap',
-        7 => 'field_event_category',
-        8 => 'field_business_insight_topic',
-        9 => 'field_region',
-        10 => 'field_tag',
-        11 => 'field_event_series',
+        7 => 'field_business_insight_topic',
+        8 => 'field_tag',
       ),
     ),
     'fields' => array(
       'title' => 'ds_content',
       'field_image_single_public' => 'ds_content',
       'group_ft_evnt_wrp' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_event_date' => 'ds_content',
-      'field_address' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
       'group_tag_wrap' => 'ds_content',
-      'field_event_category' => 'ds_content',
       'field_business_insight_topic' => 'ds_content',
-      'field_region' => 'ds_content',
       'field_tag' => 'ds_content',
-      'field_event_series' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -1670,6 +1773,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|event|featured'] = $ds_layout;
 
@@ -1716,12 +1821,14 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         0 => 'field_image_single_public',
         1 => 'field_event_date',
         2 => 'title',
+        3 => 'field_link_single',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
       'field_event_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_link_single' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -1824,7 +1931,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         1 => 'field_image_single_public',
         2 => 'field_event_date',
         3 => 'title',
-        4 => 'field_address',
+        4 => 'field_link_single',
         5 => 'field_editorial_summary',
       ),
     ),
@@ -1833,7 +1940,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_image_single_public' => 'ds_content',
       'field_event_date' => 'ds_content',
       'title' => 'ds_content',
-      'field_address' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
     ),
     'classes' => array(),

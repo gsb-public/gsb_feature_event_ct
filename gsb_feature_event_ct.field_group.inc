@@ -48,7 +48,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Additional Topics',
-    'weight' => '34',
+    'weight' => '24',
     'children' => array(
       0 => 'field_business_insight_topic',
     ),
@@ -75,7 +75,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Contact Information',
-    'weight' => '33',
+    'weight' => '23',
     'children' => array(
       0 => 'field_email',
       1 => 'field_person_ref',
@@ -131,7 +131,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Description',
-    'weight' => '27',
+    'weight' => '17',
     'children' => array(
       0 => 'field_body',
     ),
@@ -210,7 +210,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Locations',
-    'weight' => '26',
+    'weight' => '16',
     'children' => array(
       0 => 'field_event_location',
     ),
@@ -238,7 +238,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Registration & Pricing',
-    'weight' => '30',
+    'weight' => '20',
     'children' => array(
       0 => 'field_register_url',
       1 => 'field_date_time',
@@ -298,7 +298,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Speakers',
-    'weight' => '29',
+    'weight' => '19',
     'children' => array(
       0 => 'field_event_speakers',
     ),
@@ -360,7 +360,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Image',
-    'weight' => '25',
+    'weight' => '15',
     'children' => array(
       0 => 'field_image_single_public',
     ),
@@ -387,7 +387,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Keyword',
-    'weight' => '35',
+    'weight' => '25',
     'children' => array(
       0 => 'field_tag',
     ),
@@ -469,7 +469,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Schedule',
-    'weight' => '31',
+    'weight' => '21',
     'children' => array(
       0 => 'field_schedule',
     ),
@@ -496,7 +496,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Sponsors',
-    'weight' => '32',
+    'weight' => '22',
     'children' => array(
       0 => 'field_event_sponsors',
     ),
@@ -764,7 +764,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Who Should Attend',
-    'weight' => '28',
+    'weight' => '18',
     'children' => array(
       0 => 'field_event_who_attend',
     ),
@@ -832,7 +832,30 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->bundle = 'event';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Event',
+    'weight' => '9',
+    'children' => array(
+      0 => 'group_additional_topics',
+      1 => 'group_contact_information',
+      2 => 'group_description',
+      3 => 'group_event_location',
+      4 => 'group_event_registration',
+      5 => 'group_event_speakers',
+      6 => 'group_image',
+      7 => 'group_keyword',
+      8 => 'group_schedule',
+      9 => 'group_sponsors',
+      10 => 'group_who_should_attend',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
   $export['group_wrapper_event|node|event|form'] = $field_group;
 
   $field_group = new stdClass();

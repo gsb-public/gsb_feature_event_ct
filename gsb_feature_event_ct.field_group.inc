@@ -820,7 +820,28 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->bundle = 'event';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Date wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_event_date',
+      1 => 'field_register_time_zone',
+      2 => 'find_local_time',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-wrapper-date field-group-div',
+        'id' => '',
+      ),
+    ),
+  );
   $export['group_wrapper_date|node|event|default'] = $field_group;
 
   $field_group = new stdClass();

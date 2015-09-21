@@ -989,7 +989,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 31,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -1249,7 +1249,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_split_date_format',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'event_contacts' => array(
         'label' => 'hidden',
@@ -1485,7 +1485,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 28,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -1619,7 +1619,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -1867,7 +1867,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -2360,7 +2360,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'event_contacts' => array(
         'label' => 'hidden',
@@ -2504,7 +2504,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 29,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -2666,7 +2666,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -2782,7 +2782,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 32,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -2900,7 +2900,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 30,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -3251,7 +3251,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
+        'module' => 'tzfield',
         'settings' => array(
           'conditions' => array(
             0 => array(
@@ -3262,8 +3262,8 @@ function gsb_feature_event_ct_field_default_field_instances() {
             ),
           ),
         ),
-        'type' => 'gsb_field_formatter_time_zone_abbreviated',
-        'weight' => 13,
+        'type' => 'tzfield_default',
+        'weight' => 4,
       ),
       'event_contacts' => array(
         'label' => 'hidden',
@@ -3382,7 +3382,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'event_contacts' => array(
         'label' => 'hidden',
@@ -3529,7 +3529,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -3707,7 +3707,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'event_contacts' => array(
         'label' => 'hidden',
@@ -3847,7 +3847,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'event_contacts' => array(
         'label' => 'above',
@@ -4231,13 +4231,10 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'weight' => 10,
       ),
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'gsb_field_formatter_time_zone_abbreviated',
-        'weight' => 3,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
       ),
       'event_contacts' => array(
         'label' => 'hidden',

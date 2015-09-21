@@ -830,16 +830,17 @@ function gsb_feature_event_ct_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Date wrapper',
       'instance_settings' => array(
+        'id' => '',
+        'classes' => '',
         'description' => '',
-        'show_label' => 1,
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
-        'classes' => 'group-wrapper-date field-group-div',
-        'id' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_date|node|event|default'] = $field_group;

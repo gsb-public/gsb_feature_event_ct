@@ -93,8 +93,10 @@ function gsb_feature_event_ct_panelizer_defaults() {
             'description' => 'City (Palo Alto or Stanford)',
             'php' => '$language = $contexts[\'panelizer\']->data->language;
 $entity_ids = array();
-foreach($contexts[\'panelizer\']->data->field_event_location[$language] as $key => $value) {
-  $entity_ids[] = $value[\'value\'];
+if (!empty($contexts[\'panelizer\']->data->field_event_location)) {
+  foreach($contexts[\'panelizer\']->data->field_event_location[$language] as $key => $value) {
+    $entity_ids[] = $value[\'value\'];
+  }
 }
 $entities = entity_load(\'field_collection_item\', $entity_ids);
 foreach($entities as $entity) {

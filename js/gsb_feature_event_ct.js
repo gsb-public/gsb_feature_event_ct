@@ -30,42 +30,36 @@
 
       var cleanupFieldsets = function($event) {
 
-        var hide_fieldgroups = {
-          node_event_form_group_description: "node_event_form_group_description",
-          node_event_form_group_image: "node_event_form_group_image",
-          node_event_form_group_event_speakers: "node_event_form_group_event_speakers",
-          node_event_form_group_who_should_attend: "node_event_form_group_who_should_attend",
-          node_event_form_group_sponsors: "node_event_form_group_sponsors",
-          node_event_form_group_event_registration: "node_event_form_group_event_registration",
-          node_event_form_group_schedule: "node_event_form_group_schedule",
-          node_event_form_group_contact_information: "node_event_form_group_contact_information"
-        };
+         var hide_fieldgroups = {
+           Image: "Image",
+           Description : "Description *",
+           WhoShouldAttend: "Who Should Attend",
+           Speakers: "Speakers",
+           RegistrationPricing: "Registration & Pricing",
+           Schedule: "Schedule",
+           Sponsors: "Sponsors",
+           ContactInformation: "Contact Information"
+         };
 
-        $("fieldset").each(function(){
-          var fieldset = $(this);
-          var data = fieldset.data();
-          // Vertical tab support
-          if (data && data.verticalTab) {
-            for (var key in hide_fieldgroups) {
-              if (hide_fieldgroups.hasOwnProperty(key)) {
-                if (data.verticalTab.fieldset[0].id === hide_fieldgroups[data.verticalTab.fieldset[0].id] && $event == 1) {
-                  fieldset.data('verticalTab').item.hide();
-                }
-                else {
-                  fieldset.data('verticalTab').item.show();
-                }
-              }
-            }
-          }
-        }); // end of 'fieldset' each
+         $(".field-group-tabs-wrapper  .vertical-tab-button").each(function () {
+           for (var key in hide_fieldgroups) {
+             if ($event == 1) {
+               if (hide_fieldgroups[key] == $(this).text()) {
+                 $(this).hide();
+               }
+             }
+             else {
+               $(this).show();
+             }
 
+           }
+         });
       } // end of cleanupFieldsets
 
       $(document).ready(function() {
         $("[id^=edit-field-event-detail-und-]").on('change', function () {
           cleanupFieldsets($(this).val());
         });
-        cleanupFieldsets($("input[type='radio'][name='field_event_detail[und]']:checked").val());
 
         // clear the fields based on speaker type
         $("[name*='[field_speakers_person_type][und]']").each(function(){

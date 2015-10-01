@@ -838,7 +838,7 @@ function gsb_feature_event_ct_field_group_info() {
         'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
-        'speed' => 'fast',
+        'speed' => 'none',
       ),
       'formatter' => 'open',
     ),

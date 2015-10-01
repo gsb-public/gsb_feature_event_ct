@@ -637,6 +637,19 @@ function gsb_feature_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_time_zone' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['node|event|default'] = $ds_fieldsetting;
 
@@ -1538,8 +1551,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         2 => 'title',
         3 => 'field_editorial_summary',
         4 => 'field_event_date',
-        5 => 'field_register_time_zone',
-        6 => 'event_location_link',
+        5 => 'event_location_link',
+        6 => 'field_time_zone',
         7 => 'find_local_time',
       ),
       'right' => array(
@@ -1553,11 +1566,12 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
         13 => 'field_event_attendance_statement',
         14 => 'field_price',
         15 => 'field_date_time',
-        16 => 'field_register_url',
-        17 => 'field_link_event_more_info',
-        18 => 'field_event_location',
-        19 => 'field_schedule',
-        20 => 'field_event_sponsors',
+        16 => 'field_register_time_zone',
+        17 => 'field_register_url',
+        18 => 'field_link_event_more_info',
+        19 => 'field_event_location',
+        20 => 'field_schedule',
+        21 => 'field_event_sponsors',
       ),
     ),
     'fields' => array(
@@ -1566,8 +1580,8 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'title' => 'left',
       'field_editorial_summary' => 'left',
       'field_event_date' => 'left',
-      'field_register_time_zone' => 'left',
       'event_location_link' => 'left',
+      'field_time_zone' => 'left',
       'find_local_time' => 'left',
       'field_image_single_public' => 'right',
       'field_body' => 'footer',
@@ -1577,6 +1591,7 @@ function gsb_feature_event_ct_ds_layout_settings_info() {
       'field_event_attendance_statement' => 'footer',
       'field_price' => 'footer',
       'field_date_time' => 'footer',
+      'field_register_time_zone' => 'footer',
       'field_register_url' => 'footer',
       'field_link_event_more_info' => 'footer',
       'field_event_location' => 'footer',

@@ -552,7 +552,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '24',
+    'weight' => '25',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_tag',
@@ -791,7 +791,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Button wrapper',
-    'weight' => '23',
+    'weight' => '24',
     'children' => array(
       0 => 'gsb_feature_event_display_ical',
     ),
@@ -825,7 +825,7 @@ function gsb_feature_event_ct_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_event_date',
-      1 => 'field_register_time_zone',
+      1 => 'field_time_zone',
       2 => 'find_local_time',
     ),
     'format_type' => 'div',

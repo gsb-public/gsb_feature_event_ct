@@ -2225,7 +2225,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => '270x158',
         ),
         'type' => 'gsb_field_formatter_image',

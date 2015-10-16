@@ -591,13 +591,12 @@ function gsb_feature_event_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Tags:',
       'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
         'item_count' => '5',
-        'classes' => '',
+        'classes' => 'group-tags-wrapper',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_tags_wrapper|node|event|event_listing'] = $field_group;
@@ -833,7 +832,7 @@ function gsb_feature_event_ct_field_group_info() {
       'label' => 'Date wrapper',
       'instance_settings' => array(
         'id' => '',
-        'classes' => '',
+        'classes' => 'group-wrapper-date',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -900,7 +899,8 @@ function gsb_feature_event_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -932,7 +932,8 @@ function gsb_feature_event_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',

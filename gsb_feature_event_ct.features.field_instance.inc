@@ -11,7 +11,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'field_collection_item-field_person_other-field_first_name'
+  // 'field_collection_item-field_person_other-field_first_name'.
   $field_instances['field_collection_item-field_person_other-field_first_name'] = array(
     'bundle' => 'field_person_other',
     'default_value' => NULL,
@@ -85,7 +85,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_person_other-field_last_name'
+  // 'field_collection_item-field_person_other-field_last_name'.
   $field_instances['field_collection_item-field_person_other-field_last_name'] = array(
     'bundle' => 'field_person_other',
     'default_value' => NULL,
@@ -159,7 +159,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_person_other-field_person_or_other'
+  // 'field_collection_item-field_person_other-field_person_or_other'.
   $field_instances['field_collection_item-field_person_other-field_person_or_other'] = array(
     'bundle' => 'field_person_other',
     'default_value' => array(
@@ -219,7 +219,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_person_other-field_person_ref'
+  // 'field_collection_item-field_person_other-field_person_ref'.
   $field_instances['field_collection_item-field_person_other-field_person_ref'] = array(
     'bundle' => 'field_person_other',
     'default_value' => NULL,
@@ -289,7 +289,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_body'
+  // Exported field_instance: 'node-event-field_body'.
   $field_instances['node-event-field_body'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -473,7 +473,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_business_insight_topic'
+  // Exported field_instance: 'node-event-field_business_insight_topic'.
   $field_instances['node-event-field_business_insight_topic'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -604,7 +604,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_date_time'
+  // Exported field_instance: 'node-event-field_date_time'.
   $field_instances['node-event-field_date_time'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -740,7 +740,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_editorial_summary'
+  // Exported field_instance: 'node-event-field_editorial_summary'.
   $field_instances['node-event-field_editorial_summary'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -964,7 +964,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_email'
+  // Exported field_instance: 'node-event-field_email'.
   $field_instances['node-event-field_email'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1089,7 +1089,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_attendance_statement'
+  // Exported field_instance: 'node-event-field_event_attendance_statement'.
   $field_instances['node-event-field_event_attendance_statement'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1209,7 +1209,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_date'
+  // Exported field_instance: 'node-event-field_event_date'.
   $field_instances['node-event-field_event_date'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1456,7 +1456,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_detail'
+  // Exported field_instance: 'node-event-field_event_detail'.
   $field_instances['node-event-field_event_detail'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1582,7 +1582,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_location'
+  // Exported field_instance: 'node-event-field_event_location'.
   $field_instances['node-event-field_event_location'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1720,7 +1720,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_speakers'
+  // Exported field_instance: 'node-event-field_event_speakers'.
   $field_instances['node-event-field_event_speakers'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1838,7 +1838,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_sponsors'
+  // Exported field_instance: 'node-event-field_event_sponsors'.
   $field_instances['node-event-field_event_sponsors'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -1956,7 +1956,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_event_who_attend'
+  // Exported field_instance: 'node-event-field_event_who_attend'.
   $field_instances['node-event-field_event_who_attend'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -2132,7 +2132,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_image_single_public'
+  // Exported field_instance: 'node-event-field_image_single_public'.
   $field_instances['node-event-field_image_single_public'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -2268,7 +2268,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => '270x158',
         ),
         'type' => 'image',
@@ -2332,7 +2332,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_link_event_more_info'
+  // Exported field_instance: 'node-event-field_link_event_more_info'.
   $field_instances['node-event-field_link_event_more_info'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -2473,7 +2473,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_link_single'
+  // Exported field_instance: 'node-event-field_link_single'.
   $field_instances['node-event-field_link_single'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -2638,7 +2638,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_pathauto_title_alias'
+  // Exported field_instance: 'node-event-field_pathauto_title_alias'.
   $field_instances['node-event-field_pathauto_title_alias'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -2757,7 +2757,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_person_ref'
+  // Exported field_instance: 'node-event-field_person_ref'.
   $field_instances['node-event-field_person_ref'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -2875,7 +2875,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_person_title'
+  // Exported field_instance: 'node-event-field_person_title'.
   $field_instances['node-event-field_person_title'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -3048,7 +3048,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_price'
+  // Exported field_instance: 'node-event-field_price'.
   $field_instances['node-event-field_price'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -3224,7 +3224,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_register_time_zone'
+  // Exported field_instance: 'node-event-field_register_time_zone'.
   $field_instances['node-event-field_register_time_zone'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -3354,7 +3354,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_register_url'
+  // Exported field_instance: 'node-event-field_register_url'.
   $field_instances['node-event-field_register_url'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -3501,7 +3501,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_schedule'
+  // Exported field_instance: 'node-event-field_schedule'.
   $field_instances['node-event-field_schedule'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -3683,7 +3683,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_search_field'
+  // Exported field_instance: 'node-event-field_search_field'.
   $field_instances['node-event-field_search_field'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -3825,7 +3825,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_submit'
+  // Exported field_instance: 'node-event-field_submit'.
   $field_instances['node-event-field_submit'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -3938,7 +3938,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_tag'
+  // Exported field_instance: 'node-event-field_tag'.
   $field_instances['node-event-field_tag'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -4072,7 +4072,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_target_audience'
+  // Exported field_instance: 'node-event-field_target_audience'.
   $field_instances['node-event-field_target_audience'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',
@@ -4205,7 +4205,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-event-field_time_zone'
+  // Exported field_instance: 'node-event-field_time_zone'.
   $field_instances['node-event-field_time_zone'] = array(
     'bundle' => 'event',
     'custom_add_another' => '',

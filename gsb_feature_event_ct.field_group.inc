@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function gsb_feature_event_ct_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_academic_area|node|event|form'] = $field_group;
+  $field_groups['group_academic_area|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -62,7 +62,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_additional_topics|node|event|form'] = $field_group;
+  $field_groups['group_additional_topics|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -91,7 +91,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_contact_information|node|event|form'] = $field_group;
+  $field_groups['group_contact_information|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -118,7 +118,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_department|node|event|form'] = $field_group;
+  $field_groups['group_department|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -145,7 +145,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_description|node|event|form'] = $field_group;
+  $field_groups['group_description|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -172,7 +172,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_category|node|event|form'] = $field_group;
+  $field_groups['group_event_category|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -197,7 +197,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_image|node|event|form'] = $field_group;
+  $field_groups['group_event_image|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -225,7 +225,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_event_location|node|event|form'] = $field_group;
+  $field_groups['group_event_location|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -258,7 +258,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_event_registration|node|event|form'] = $field_group;
+  $field_groups['group_event_registration|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -285,7 +285,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_series|node|event|form'] = $field_group;
+  $field_groups['group_event_series|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -312,7 +312,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_speakers|node|event|form'] = $field_group;
+  $field_groups['group_event_speakers|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -347,7 +347,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_ft_evnt_wrp|node|event|featured'] = $field_group;
+  $field_groups['group_ft_evnt_wrp|node|event|featured'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -374,7 +374,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_image|node|event|form'] = $field_group;
+  $field_groups['group_image|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -401,7 +401,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_keyword|node|event|form'] = $field_group;
+  $field_groups['group_keyword|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -429,7 +429,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_location|node|event|form'] = $field_group;
+  $field_groups['group_location|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -456,7 +456,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_region|node|event|form'] = $field_group;
+  $field_groups['group_region|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -483,7 +483,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_schedule|node|event|form'] = $field_group;
+  $field_groups['group_schedule|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -510,7 +510,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_sponsors|node|event|form'] = $field_group;
+  $field_groups['group_sponsors|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -539,7 +539,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_tag_wrap|node|event|featured'] = $field_group;
+  $field_groups['group_tag_wrap|node|event|featured'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -571,7 +571,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_tags_wrapper|node|event|default'] = $field_group;
+  $field_groups['group_tags_wrapper|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -599,7 +599,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_tags_wrapper|node|event|event_listing'] = $field_group;
+  $field_groups['group_tags_wrapper|node|event|event_listing'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -638,7 +638,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_tags_wrapper|node|event|full'] = $field_group;
+  $field_groups['group_tags_wrapper|node|event|full'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -668,7 +668,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_tags_wrapper|node|event|teaser'] = $field_group;
+  $field_groups['group_tags_wrapper|node|event|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -693,7 +693,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_tags|node|event|form'] = $field_group;
+  $field_groups['group_tags|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -718,7 +718,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_target_audience|node|event|form'] = $field_group;
+  $field_groups['group_target_audience|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -750,7 +750,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_taxonomy|node|event|form'] = $field_group;
+  $field_groups['group_taxonomy|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -777,7 +777,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_who_should_attend|node|event|form'] = $field_group;
+  $field_groups['group_who_should_attend|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -808,7 +808,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_buttons|node|event|default'] = $field_group;
+  $field_groups['group_wrapper_buttons|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -842,7 +842,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_date|node|event|default'] = $field_group;
+  $field_groups['group_wrapper_date|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -877,7 +877,7 @@ function gsb_feature_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_wrapper_event|node|event|form'] = $field_group;
+  $field_groups['group_wrapper_event|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -910,7 +910,7 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|event|compact'] = $field_group;
+  $field_groups['group_wrapper_title|node|event|compact'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -943,7 +943,37 @@ function gsb_feature_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|event|expanded'] = $field_group;
+  $field_groups['group_wrapper_title|node|event|expanded'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Academic Area');
+  t('Additional Topics');
+  t('Button wrapper');
+  t('Contact Information');
+  t('Date wrapper');
+  t('Department');
+  t('Description');
+  t('Event');
+  t('Event Category');
+  t('Event Series');
+  t('Image');
+  t('Keyword');
+  t('Location');
+  t('Locations');
+  t('Region');
+  t('Registration & Pricing');
+  t('Schedule');
+  t('Speakers');
+  t('Sponsors');
+  t('Tagging');
+  t('Tags');
+  t('Tags:');
+  t('Target Audience');
+  t('Title wrapper');
+  t('Who Should Attend');
+  t('ft-event-wrp');
+  t('tag-wrp');
+
+  return $field_groups;
 }

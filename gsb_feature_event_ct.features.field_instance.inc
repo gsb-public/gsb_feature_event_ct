@@ -230,6 +230,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'conditions' => array(),
           'custom_link_to_entity' => '',
           'custom_prefix' => '',
@@ -510,6 +511,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => FALSE,
+          'link_to_term' => TRUE,
           'path_prefix' => 'events/list/',
           'separator' => ', ',
           'tid_or_name' => 'name',
@@ -535,6 +537,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => FALSE,
+          'link_to_term' => TRUE,
           'path_prefix' => 'events/list/',
           'separator' => ', ',
           'tid_or_name' => 'name',
@@ -3969,6 +3972,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => FALSE,
+          'link_to_term' => TRUE,
           'path_prefix' => 'events/list/',
           'separator' => ', ',
           'tid_or_name' => 'name',
@@ -3994,6 +3998,7 @@ function gsb_feature_event_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => FALSE,
+          'link_to_term' => TRUE,
           'path_prefix' => 'events/list/',
           'separator' => ', ',
           'tid_or_name' => 'name',

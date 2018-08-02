@@ -11,7 +11,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups = array();
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_academic_area|node|event|form';
   $field_group->group_name = 'group_academic_area';
@@ -94,7 +94,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_contact_information|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_department|node|event|form';
   $field_group->group_name = 'group_department';
@@ -148,7 +148,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_description|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_event_category|node|event|form';
   $field_group->group_name = 'group_event_category';
@@ -175,7 +175,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_event_category|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_event_image|node|event|form';
   $field_group->group_name = 'group_event_image';
@@ -261,7 +261,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_event_registration|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_event_series|node|event|form';
   $field_group->group_name = 'group_event_series';
@@ -404,7 +404,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_keyword|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_location|node|event|form';
   $field_group->group_name = 'group_location';
@@ -432,7 +432,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_location|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_region|node|event|form';
   $field_group->group_name = 'group_region';
@@ -671,7 +671,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_tags_wrapper|node|event|teaser'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_tags|node|event|form';
   $field_group->group_name = 'group_tags';
@@ -696,7 +696,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_tags|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_target_audience|node|event|form';
   $field_group->group_name = 'group_target_audience';
@@ -721,7 +721,7 @@ function gsb_feature_event_ct_field_group_info() {
   $field_groups['group_target_audience|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_taxonomy|node|event|form';
   $field_group->group_name = 'group_taxonomy';
